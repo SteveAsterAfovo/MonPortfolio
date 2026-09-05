@@ -15,19 +15,14 @@ const NAV = [
 ];
 
 const TITLE = "Steve Aster Afovo — Développeur Fullstack & IA | Bénin";
-const DESCRIPTION =
-  "Développeur fullstack IA-augmented à Abomey-Calavi (Bénin). Plateformes SaaS, cybersécurité, suites business et outils open source en production.";
+const DESCRIPTION = "Développeur fullstack IA-augmented à Abomey-Calavi (Bénin). Plateformes SaaS, cybersécurité, suites business et outils open source en production.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESCRIPTION },
-      {
-        name: "keywords",
-        content:
-          "développeur fullstack Bénin, développeur React Vue Node, SaaS Afrique de l'Ouest, IA-augmented developer, Steve Aster Afovo",
-      },
+      { name: "keywords", content: "développeur fullstack Bénin, développeur React Vue Node, SaaS Afrique de l'Ouest, IA-augmented developer, Steve Aster Afovo" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "website" },
@@ -143,14 +138,12 @@ function Header() {
           >
             <span className="relative block h-3 w-4">
               <span
-                className={`absolute left-0 block h-px w-4 bg-foreground transition-transform duration-300 ${
-                  open ? "top-1.5 rotate-45" : "top-0"
-                }`}
+                className={`absolute left-0 block h-px w-4 bg-foreground transition-transform duration-300 ${open ? "top-1.5 rotate-45" : "top-0"
+                  }`}
               />
               <span
-                className={`absolute left-0 block h-px w-4 bg-foreground transition-transform duration-300 ${
-                  open ? "top-1.5 -rotate-45" : "top-3"
-                }`}
+                className={`absolute left-0 block h-px w-4 bg-foreground transition-transform duration-300 ${open ? "top-1.5 -rotate-45" : "top-3"
+                  }`}
               />
             </span>
           </button>
@@ -158,9 +151,8 @@ function Header() {
       </div>
 
       <div
-        className={`overflow-hidden border-t border-border bg-background transition-[max-height,opacity] duration-300 md:hidden ${
-          open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`overflow-hidden border-t border-border bg-background transition-[max-height,opacity] duration-300 md:hidden ${open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <nav className="mx-auto flex max-w-6xl flex-col px-5 py-2">
           {NAV.map((n) => (
@@ -284,9 +276,8 @@ function Projects() {
         {projects.map((project, i) => (
           <article
             key={project.id}
-            className={`card-flat card-hover group flex flex-col rounded-2xl p-6 sm:p-8 ${
-              i === 0 ? "col-span-12" : "col-span-12 md:col-span-6"
-            }`}
+            className={`card-flat card-hover group flex flex-col rounded-2xl p-6 sm:p-8 ${i === 0 ? "col-span-12" : "col-span-12 md:col-span-6"
+              }`}
           >
             <div className="flex items-start justify-between gap-4">
               <div className="min-w-0">
