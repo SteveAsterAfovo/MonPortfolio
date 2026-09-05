@@ -44,6 +44,7 @@ export const portfolioData = {
     linkedin: "linkedin.com/in/SteveAsterAfovo",
     github: "github.com/SteveAsterAfovo",
     portfolio: "steveasterafovo.netlify.app",
+    company: "stafprint.com",
     year: "2026",
   },
   profile: {
