@@ -1,24 +1,39 @@
-# Your Stunning Portfolio
+# Steve Aster AFOVO - Portfolio Professionnel
 
-Je veux que tu me fasse un portofolio unique très jolie, bien convaiquant, etc...
+> Product Designer & Full-Stack Developer spécialisé dans la création de produits numériques qui résolvent de vrais problèmes business.
 
-This project was built with [Lovable](https://lovable.dev).
+[![Nuxt 3](https://img.shields.io/badge/Nuxt-3.x-00DC82?style=flat&logo=nuxt.js)](https://nuxt.com)
+[![Vue 3](https://img.shields.io/badge/Vue-3.x-4FC08D?style=flat&logo=vue.js)](https://vuejs.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.x-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat&logo=typescript)](https://www.typescriptlang.org)
 
-## Build with Lovable
+## 🎯 À propos
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/df357802-7c2a-4318-bd82-2cd8c255a60c).
+Portfolio moderne et performant présentant mon expertise en conception et développement de produits numériques. Construit avec les dernières technologies web pour offrir une expérience utilisateur fluide et professionnelle.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+**Visitez le portfolio :** [Mon Portfolio - Steeve Aster Afovo](https://steveasterafovo.netlify.app)
 
-## Development
+## 🎨 Sections du Portfolio
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+| Section | Description |
+|---------|-------------|
+| **Hero** | Introduction avec nom, titre et appels à l'action |
+| **À propos** | Présentation, parcours et statistiques clés |
+| **Compétences** | Expertise en Design, Développement et Outils |
+| **Projets** | Portfolio de réalisations avec filtres par catégorie |
+| **Contact** | Formulaire fonctionnel avec système de tickets |
+| **Footer** | Liens sociaux et copyright |
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+## 👤 Contact
+
+**Steve Aster AFOVO**
+- Email: [steveasterafovo@gmail.com](mailto:steveasterafovo@gmail.com)
+- LinkedIn: [linkedin.com/in/steveasterafovo](https://linkedin.com/in/steveasterafovo)
+- GitHub: [github.com/steveasterafovo](https://github.com/steveasterafovo)
+
+---
+
+<div align="center">
+  <p>Développé avec ❤️ par Steve Aster AFOVO</p>
+  <p>© 2025 - Tous droits réservés</p>
+</div>
