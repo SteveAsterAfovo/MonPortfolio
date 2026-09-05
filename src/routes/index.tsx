@@ -587,7 +587,7 @@ function Footer() {
             GitHub
           </a>
           <a
-            href={`https://${identity.portfolio}`}
+            href={`https://${identity.company}`}
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors duration-300 hover:text-primary"
