@@ -592,7 +592,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="transition-colors duration-300 hover:text-primary"
           >
-            Netlify
+            Entreprise
           </a>
         </div>
       </div>
