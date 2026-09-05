@@ -5,7 +5,7 @@ import appCss from "../styles.css?url";
 import { NotFoundComponent, ErrorComponent } from "@/components/errors";
 
 const PAGE_TITLE = "Steve Aster Afovo - Développeur Fullstack & IA";
-const PAGE_DESC = "Assistant IA de l'écosystème ${SITE.name} :  chat, analyse et génération.";
+const PAGE_DESC = "Portfolio de Steve Aster D. AFOVO, développeur fullstack IA-augmented basé à Abomey-Calavi, Bénin.";
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
@@ -13,18 +13,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#ffffff" },
-      { title: "Steve Aster Afovo — Développeur Fullstack & IA" },
-      { name: "description", content: "Portfolio de Steve Aster D. AFOVO, développeur fullstack IA-augmented basé à Abomey-Calavi, Bénin." },
+      { title: PAGE_TITLE },
+      { name: "description", content: PAGE_DESC },
       { name: "author", content: "Steve Aster D. AFOVO" },
       { property: "og:site_name", content: "Steve Aster Afovo" },
+      { property: "og:title", content: PAGE_TITLE },
+      { property: "og:description", content: PAGE_DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "preconnect", href: "https://cdn.jsdelivr.net" },
@@ -32,7 +32,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
 
