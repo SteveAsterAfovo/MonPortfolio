@@ -2,7 +2,6 @@ import { useRouter, Link } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { AlertCircle, RefreshCw, BookOpen, Terminal } from "lucide-react";
 import { reportError } from "@/lib/error/reporting";
-import { SITE } from "@/data/site";
 
 export function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
@@ -29,7 +28,7 @@ export function ErrorComponent({ error, reset }: { error: Error; reset: () => vo
                 Erreur de rendu de la documentation
               </h1>
               <p className="text-sm text-muted-foreground mt-0.5">
-                Un problème technique est survenu lors du chargement de la documentation {SITE.name}.
+                Un problème technique est survenu lors du chargement de la page.
               </p>
             </div>
           </div>
