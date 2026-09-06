@@ -266,7 +266,9 @@ function Projects() {
   return (
     <section id="projets" className="border-b border-border py-18 sm:py-24">
       <div className="mb-12 flex items-end justify-between gap-6">
-        <SectionTitle tag="Sélection" title="Projets en production" />
+        <div>
+          <SectionTitle tag="Sélection" title="Projets en production" />
+        </div>
         <span className="hidden shrink-0 font-mono text-xs uppercase tracking-[0.22em] text-muted-foreground sm:block">
           01 — {String(projects.length).padStart(2, "0")}
         </span>
