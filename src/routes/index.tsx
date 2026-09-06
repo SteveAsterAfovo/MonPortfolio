@@ -217,7 +217,7 @@ function Hero() {
           </div>
         </div>
 
-        <aside className="col-span-12 lg:col-span-4">
+        <aside className="min-w-0 lg:col-span-4">
           <div className="card-flat animate-rise-slow rounded-2xl p-6 sm:p-7">
             <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground">
               En bref
