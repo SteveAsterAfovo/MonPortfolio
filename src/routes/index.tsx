@@ -181,8 +181,8 @@ function Header() {
 function Hero() {
   return (
     <section id="top" className="border-b border-border">
-      <div className="mx-auto grid max-w-6xl grid-cols-12 gap-10 px-5 pt-20 pb-16 sm:px-6 sm:pt-28 sm:pb-24">
-        <div className="col-span-12 lg:col-span-8">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-5 pt-20 pb-16 sm:px-6 sm:pt-28 sm:pb-24 lg:grid-cols-12">
+        <div className="min-w-0 lg:col-span-8">
           <div className="animate-rise mb-7 inline-flex items-center gap-2.5 rounded-full border border-border bg-secondary px-3.5 py-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
             <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground sm:text-[11px]">
