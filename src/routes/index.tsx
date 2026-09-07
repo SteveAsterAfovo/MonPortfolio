@@ -3,21 +3,22 @@ import { Header, Footer, WhatsAppFab } from "@/components/site";
 import { Hero, Projects, About, Stack, Credentials, Contact } from "@/components/pages";
 import { identity, projects, stack, STAFPRINT_URL } from "@/lib/shared";
 
-const TITLE = "Steve Aster Afovo - Développeur Fullstack & IA | Bénin";
-const DESCRIPTION = "Développeur fullstack IA-augmented à Abomey-Calavi (Bénin) et responsable des opérations de STAF PRINT CENTER. Plateformes SaaS, cybersécurité, suites business et outils en production.";
+const AUTHOR_NAME = "Steve Aster D. AFOVO";
+const SITE_NAME = `${AUTHOR_NAME} - Portfolio`;
+const TITLE = `${AUTHOR_NAME} | Développeur Fullstack & IA - Abomey-Calavi, Bénin`;
+const DESCRIPTION = `Portfolio de Steve Aster D. AFOVO, développeur fullstack IA-augmented et manager. Découvre mes projets, stack technique et expertises.`;
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESCRIPTION },
-      { name: "keywords", content: "développeur fullstack Bénin, développeur React Vue Node, SaaS Afrique de l'Ouest, IA-augmented developer, Steve Aster Afovo, STAF PRINT CENTER, Porto-Novo" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "profile" },
       { property: "og:url", content: "/" },
       { property: "og:locale", content: "fr_FR" },
-      { property: "og:site_name", content: "Steve Aster Afovo" },
+      { property: "og:site_name", content: SITE_NAME },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: TITLE },
       { name: "twitter:description", content: DESCRIPTION },
@@ -49,7 +50,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: "Projets de Steve Aster Afovo",
+          name: SITE_NAME,
           itemListElement: projects.map((p, i) => ({
             "@type": "ListItem",
             position: i + 1,
