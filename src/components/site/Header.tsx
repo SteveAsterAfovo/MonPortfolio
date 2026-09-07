@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Logo, NAV } from "./shared";
+import { Logo, NAV } from "@/lib/shared";
 import { ThemeToggle } from "./ThemeToggle";
 
 export function Header() {
