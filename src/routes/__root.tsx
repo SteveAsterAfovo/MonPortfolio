@@ -2,7 +2,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Outlet, createRootRouteWithContext, HeadContent, Scripts } from "@tanstack/react-router";
 import { type ReactNode } from "react";
 import appCss from "../styles.css?url";
-import { ThemeProvider, themeInitScript } from "../lib/theme";
+import { ThemeProvider, themeInitScript } from "@/lib/theme";
 import { NotFoundComponent, ErrorComponent } from "@/components/errors";
 
 const PAGE_TITLE = "Steve Aster Afovo - Développeur Fullstack & IA";
