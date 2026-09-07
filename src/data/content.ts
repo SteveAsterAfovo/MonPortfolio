@@ -49,7 +49,8 @@ export const portfolioData = {
   },
   profile: {
     paragraphs: [
-      "Développeur fullstack à double culture : Finance & Tech, je conçois des produits web et SaaS qui passent en production. Mon approche : architecture solide, exécution rapide, design soigné.",
+      "Responsable des opérations chez STAF PRINT CENTER, je suis développeur fullstack à double culture : Finance & Tech.",
+      "Je conçois des produits web et SaaS qui passent en production. Mon approche : architecture solide, exécution rapide, design soigné.",
       "J'opère sur des projets locaux et internationaux, du MVP à la plateforme à plusieurs modules.",
     ],
     differentiators: [
