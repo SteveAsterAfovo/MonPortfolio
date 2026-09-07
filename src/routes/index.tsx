@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Header, Footer, WhatsAppFab } from "@/components/site";
 import { Hero } from "../components/pages/Hero";
 import { Projects } from "../components/pages/Projects";
 import { About } from "../components/pages/About";
 import { Stack } from "../components/pages/Stack";
 import { Credentials } from "../components/pages/Credentials";
 import { Contact } from "../components/pages/Contact";
-import { Header, Footer, WhatsAppFab } from "../components/site";
 import { identity, projects, stack, STAFPRINT_URL } from "../lib/shared";
 
 const TITLE = "Steve Aster Afovo - Développeur Fullstack & IA | Bénin";
