@@ -1,9 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Header, Footer, WhatsAppFab } from "@/components/site";
-import { Hero } from "../components/pages/Hero";
-import { Projects } from "../components/pages/Projects";
-import { About } from "../components/pages/About";
-import { Stack } from "../components/pages/Stack";
+import { Hero, Projects, About, Stack } from "../components/pages/Hero";
 import { Credentials } from "../components/pages/Credentials";
 import { Contact } from "../components/pages/Contact";
 import { identity, projects, stack, STAFPRINT_URL } from "../lib/shared";
