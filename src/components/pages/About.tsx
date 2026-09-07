@@ -7,18 +7,6 @@ export function About() {
 
       <div className="mt-10 grid grid-cols-12 gap-8 sm:mt-12 md:gap-10">
         <div className="col-span-12 min-w-0 md:col-span-7">
-          <p className="mb-5 max-w-[60ch] text-[0.975rem] leading-relaxed text-pretty text-muted-foreground sm:text-lg">
-            Responsable des opérations à {" "}
-            <a
-              href={STAFPRINT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-primary underline decoration-primary/35 underline-offset-4 hover:decoration-primary"
-            >
-              STAF PRINT CENTER,
-            </a>{" "}
-          </p>
-
           {profile.paragraphs.map((p) => (
             <p
               key={p}
