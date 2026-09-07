@@ -18,7 +18,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: PAGE_TITLE },
       { name: "description", content: PAGE_DESC },
       { name: "author", content: "Steve Aster D. AFOVO" },
-      { property: "og:site_name", content: "Steve Aster Afovo" },
+
+      /* Open Graph / Facebook / WhatsApp */
       { property: "og:title", content: PAGE_TITLE },
       { property: "og:description", content: PAGE_DESC },
       { property: "og:type", content: "website" },
