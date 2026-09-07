@@ -36,7 +36,7 @@ export function Projects() {
                   src={project.logoDesk ?? project.logo}
                   alt={`Logo du projet ${project.title}`}
                   loading="lazy"
-                  className="h-7 w-auto max-w-[90px] shrink-0 object-contain opacity-80 transition-opacity duration-300 group-hover:opacity-100 sm:h-8 sm:max-w-[120px]"
+                  className="h-7 w-auto max-w-22.5 shrink-0 object-contain opacity-80 transition-opacity duration-300 group-hover:opacity-100 sm:h-8 sm:max-w-30"
                 />
               ) : (
                 <span className="font-mono text-xs text-muted-foreground">{project.index}</span>
@@ -76,7 +76,7 @@ export function Projects() {
             )}
 
             {project.badge && (
-              <p className="mt-6 rounded-xl border border-primary/20 bg-primary/[0.08] px-4 py-2.5 text-xs">
+              <p className="mt-6 rounded-xl border border-primary/20 bg-primary/8 px-4 py-2.5 text-xs">
                 {project.badge}
               </p>
             )}
