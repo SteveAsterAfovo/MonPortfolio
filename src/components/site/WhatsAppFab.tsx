@@ -1,4 +1,4 @@
-import { WHATSAPP_URL } from "./shared";
+import { WHATSAPP_URL } from "@/lib/shared";
 
 export function WhatsAppFab() {
   return (
