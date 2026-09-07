@@ -1,4 +1,4 @@
-import { certifications, identity, profile, projects, Stat, STAFPRINT_URL } from "../../lib/shared";
+import { certifications, identity, profile, projects, Stat, STAFPRINT_URL } from "@/lib/shared";
 
 export function Hero() {
   return (
@@ -18,10 +18,6 @@ export function Hero() {
             <span className="text-primary">{identity.role.split("·")[0]?.trim()}</span>
           </h1>
 
-          <p className="animate-rise mt-6 max-w-[58ch] text-[0.975rem] leading-relaxed text-pretty text-muted-foreground sm:mt-7 sm:text-lg">
-            {profile.paragraphs[0]}
-          </p>
-
           <p className="animate-rise mt-5 max-w-[58ch] text-[0.975rem] leading-relaxed text-pretty text-muted-foreground sm:text-lg">
             Je suis également{" "}
             <strong className="font-semibold text-foreground">Responsable des opérations</strong> chez{" "}
@@ -35,6 +31,12 @@ export function Hero() {
             </a>
             , studio de design, d'impression et de formations basé à Porto-Novo.
           </p>
+
+          <p className="animate-rise mt-6 max-w-[58ch] text-[0.975rem] leading-relaxed text-pretty text-muted-foreground sm:mt-7 sm:text-lg">
+            {profile.paragraphs[0]}
+          </p>
+
+
 
           <div className="animate-rise mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap sm:items-center">
             <a
