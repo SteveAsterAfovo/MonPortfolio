@@ -19,7 +19,8 @@ export function Hero() {
           </h1>
 
           <p className="animate-rise mt-6 max-w-[58ch] text-[0.975rem] leading-relaxed text-pretty text-muted-foreground sm:mt-7 sm:text-lg">
-            {profile.paragraphs.slice(0, 2).join(" ")}
+            <p>{profile.paragraphs[0]}</p>
+            <p className="mt-4">{profile.paragraphs[1]}</p>
           </p>
 
 
