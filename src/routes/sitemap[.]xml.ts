@@ -1,6 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
+import type { } from "@tanstack/react-start";
 
-/** Sitemap généré depuis l'hôte courant : reste valide sur la preview et le domaine final. */
+const RAW_URL = import.meta.env.VITE_STEVE_URL;
+const BASE_URL = RAW_URL.replace(/\/$/, "");
+
+interface SitemapEntry {
+  path: string;
+  changefreq?: "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
+  priority?: string;
+}
+
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
@@ -18,8 +27,8 @@ ${urls
 
         return new Response(xml, {
           headers: {
-            "content-type": "application/xml; charset=utf-8",
-            "cache-control": "public, max-age=3600",
+            "Content-Type": "application/xml",
+            "Cache-Control": "public, max-age=3600",
           },
         });
       },
