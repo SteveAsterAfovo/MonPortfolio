@@ -18,20 +18,6 @@ export function Hero() {
             <span className="text-primary">{identity.role.split("·")[0]?.trim()}</span>
           </h1>
 
-          <p className="animate-rise mt-5 max-w-[58ch] text-[0.975rem] leading-relaxed text-pretty text-muted-foreground sm:text-lg">
-            Je suis également{" "}
-            <strong className="font-semibold text-foreground">Responsable des opérations</strong> chez{" "}
-            <a
-              href={STAFPRINT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-primary underline decoration-primary/35 underline-offset-4 transition-colors hover:decoration-primary"
-            >
-              STAF PRINT CENTER
-            </a>
-            , studio de design, d'impression et de formations basé à Porto-Novo.
-          </p>
-
           <p className="animate-rise mt-6 max-w-[58ch] text-[0.975rem] leading-relaxed text-pretty text-muted-foreground sm:mt-7 sm:text-lg">
             {profile.paragraphs[0]}
           </p>
