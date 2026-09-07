@@ -14,7 +14,16 @@ export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
       GET: ({ request }) => {
-        const origin = new URL(request.url).origin;
+        const origin = [
+          { path: "/", changefreq: "weekly", priority: "1.0" },
+        ];
+
+        const urls = entries.map((e) =>
+          [
+            `  <url>`,
+            `    <loc>${BASE_URL}${e.path}</loc>`,
+            e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
+            e.priority ? `    <priority>${e.priority}</priority>` : null,
         const urls = ["/"];
 
         const xml = `<?xml version="1.0" encoding="UTF-8"?>
