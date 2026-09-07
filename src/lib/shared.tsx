@@ -18,6 +18,7 @@ export const LOGOS = {
   lightMobile: "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/SteveAsterAfovo-MC.png",
   darkDesktop: "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/SteveAsterAfovo-DW.png",
   darkMobile: "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/SteveAsterAfovo-MW.png",
+  metaImg: "https://cdn.jsdelivr.net/gh/stafprintcenter/Files/Images/Other/meta.avif",
 };
 
 export const NAV = [
