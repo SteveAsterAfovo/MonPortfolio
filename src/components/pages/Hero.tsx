@@ -23,8 +23,6 @@ export function Hero() {
             <p className="mt-4">{profile.paragraphs[1]}</p>
           </p>
 
-
-
           <div className="animate-rise mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap sm:items-center">
             <a
               href="#projets"
