@@ -1,8 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Header, Footer, WhatsAppFab } from "@/components/site";
-import { Hero, Projects, About, Stack } from "../components/pages";
-import { Credentials } from "../components/pages/Credentials";
-import { Contact } from "../components/pages/Contact";
+import { Hero, Projects, About, Stack, Credentials, Contact } from "../components/pages";
 import { identity, projects, stack, STAFPRINT_URL } from "../lib/shared";
 
 const TITLE = "Steve Aster Afovo - Développeur Fullstack & IA | Bénin";
