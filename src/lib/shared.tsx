@@ -1,4 +1,4 @@
-import { portfolioData } from "../data/content";
+import { portfolioData } from "@/data/content";
 import { useTheme } from "./theme";
 
 export const {
