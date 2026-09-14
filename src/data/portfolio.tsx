@@ -5,19 +5,6 @@ export const { identity, profile, stack, stackIntro, stackFooter, projects, cert
 export const STAFPRINT_URL = "https://stafprint.com/";
 export const WHATSAPP_URL = "https://wa.me/2290166523639";
 
-export function SectionTitle({ tag, title }: { tag: string; title: string }) {
-  return (
-    <>
-      <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.28em] text-primary sm:text-[11px]">
-        {tag}
-      </p>
-      <h2 className="font-display text-[clamp(1.75rem,6vw,3.1rem)] font-semibold leading-[1.06] tracking-[-0.035em] text-balance">
-        {title}
-      </h2>
-    </>
-  );
-}
-
 export function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div className="min-w-0">
