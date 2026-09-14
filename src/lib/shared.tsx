@@ -1,6 +1,4 @@
 import { portfolioData } from "@/data/content";
-import { useTheme } from "./theme";
-import logos from "@/assets/logos.json";
 
 export const { identity, profile, stack, stackIntro, stackFooter, projects, certifications, education, autodidact } = portfolioData;
 
