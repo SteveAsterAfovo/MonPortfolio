@@ -5,8 +5,6 @@ export const NAV = [
   { href: "#parcours", label: "Parcours" },
 ];
 
-export const WHATSAPP_URL = "https://wa.me/2290166523639";
-
 export function SectionTitle({ tag, title }: { tag: string; title: string }) {
   return (
     <>
