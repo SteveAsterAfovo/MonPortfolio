@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Header, Footer, WhatsAppFab } from "@/components/site";
+import { SiteShell, WhatsAppFab } from "@/components/site";
 import { Hero, Projects, About, Stack, Credentials, Contact } from "@/components/pages";
 import { identity, projects, stack, STAFPRINT_URL } from "@/data/portfolio";
 
@@ -68,20 +68,20 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="relative min-h-screen overflow-x-clip bg-background font-body text-foreground antialiased">
-      <Header />
+      <SiteShell>
 
-      <main className="relative z-10">
-        <Hero />
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <Projects />
-          <About />
-          <Stack />
-          <Credentials />
-          <Contact />
-        </div>
-      </main>
+        <main className="relative z-10">
+          <Hero />
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <Projects />
+            <About />
+            <Stack />
+            <Credentials />
+            <Contact />
+          </div>
+        </main>
 
-      <Footer />
+      </SiteShell>
       <WhatsAppFab />
     </div>
   );
