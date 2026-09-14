@@ -1,4 +1,4 @@
-import { identity, profile } from "@/data/portfolio";
+import { identity, profile } from "@/data/content";
 import { SectionTitle } from "@/components/site";
 
 
