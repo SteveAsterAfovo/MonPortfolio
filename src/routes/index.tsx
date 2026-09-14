@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Header, Footer, WhatsAppFab } from "@/components/site";
 import { Hero, Projects, About, Stack, Credentials, Contact } from "@/components/pages";
-import { identity, projects, stack, STAFPRINT_URL } from "@/lib/shared";
+import { identity, projects, stack, STAFPRINT_URL } from "@/data/portfolio";
 
 const AUTHOR_NAME = "Steve Aster D. AFOVO";
 const SITE_NAME = `${AUTHOR_NAME} - Portfolio`;
