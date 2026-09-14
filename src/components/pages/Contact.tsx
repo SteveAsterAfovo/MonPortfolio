@@ -1,4 +1,4 @@
-import { identity } from "@/data/portfolio";
+import { identity } from "@/data/content";
 import { URL } from "@/data/content";
 
 export function Contact() {
