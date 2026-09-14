@@ -3,9 +3,9 @@ import { Cookie } from "lucide-react";
 import { STAFPRINT_URL } from "@/lib/shared";
 
 const STORAGE_KEY = "spc_toolkit_cookie_consent_v1";
-const GA_ID = "G-MJ47YJ4V60";
+const GA_ID = "G-BN33CS7ZZE";
 
-export const STAFPRINT_BASE = STAFPRINT_URL.replace(/\/+$/, "");
+const STAFPRINT_BASE = STAFPRINT_URL.replace(/\/+$/, "");
 
 type Consent = "accepted" | "declined";
 
