@@ -1,5 +1,5 @@
 import { SectionTitle } from "@/components/site";
-import { projects } from "@/data/content";
+import { projects } from "@/data";
 
 export function Projects() {
   return (
