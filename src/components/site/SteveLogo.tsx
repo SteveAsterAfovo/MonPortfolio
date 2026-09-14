@@ -7,8 +7,7 @@ export function SteveMobLogo({ className }: { className?: string }) {
   return (
     <img
       src={dark ? logos.mw : logos.mc}
-      alt=""
-      aria-hidden="true"
+      alt="Logo Steve Aster Afovo"
       className={cn("object-contain", className)}
       loading="eager"
       decoding="async"
@@ -22,7 +21,7 @@ export function SteveDeskLogo({ className }: { className?: string }) {
   return (
     <img
       src={dark ? logos.dw : logos.dc}
-      alt="Logo STAF PRINT CENTER"
+      alt="Logo Steve Aster Afovo"
       className={cn("object-contain", className)}
       loading="eager"
       decoding="async"
