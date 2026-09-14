@@ -8,7 +8,7 @@ export function Projects() {
           <SectionTitle tag="Sélection" title="Projets en production" />
         </div>
         <span className="hidden shrink-0 font-mono text-xs uppercase tracking-[0.22em] text-muted-foreground sm:block">
-          01 — {String(projects.length).padStart(2, "0")}
+          01 - {String(projects.length).padStart(2, "0")}
         </span>
       </div>
 
@@ -68,7 +68,7 @@ export function Projects() {
               <ul className="mt-6 grid gap-2.5 text-sm text-muted-foreground sm:grid-cols-2">
                 {project.features.map((f) => (
                   <li key={f} className="flex gap-2.5">
-                    <span className="text-primary">—</span>
+                    <span className="text-primary">-</span>
                     {f}
                   </li>
                 ))}
