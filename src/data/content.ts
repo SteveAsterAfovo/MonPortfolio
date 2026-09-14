@@ -60,8 +60,7 @@ export const portfolioData = {
     ],
     softSkills: ["Rigueur", "Créativité", "Autonomie", "Leadership"],
   },
-  stackIntro:
-    "Une stack moderne, choisie pour la productivité et la fiabilité - du front pixel-perfect au back robuste, avec l'IA comme accélérateur.",
+  stackIntro: "Une stack moderne, choisie pour la productivité et la fiabilité - du front pixel-perfect au back robuste, avec l'IA comme accélérateur.",
   stack: [
     {
       label: "Frontend",
