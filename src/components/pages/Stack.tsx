@@ -1,4 +1,4 @@
-import { SectionTitle, stack, stackFooter, stackIntro } from "@/lib/shared";
+import { SectionTitle, stack, stackFooter, stackIntro } from "@/data/portfolio";
 
 export function Stack() {
   return (
