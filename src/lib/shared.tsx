@@ -1,24 +1,15 @@
 import { portfolioData } from "@/data/content";
 import { useTheme } from "./theme";
+import logos from "@/assets/logos.json";
 
-export const {
-  identity,
-  profile,
-  stack,
-  stackIntro,
-  stackFooter,
-  projects,
-  certifications,
-  education,
-  autodidact,
-} = portfolioData;
+export const { identity, profile, stack, stackIntro, stackFooter, projects, certifications, education, autodidact } = portfolioData;
 
 export const LOGOS = {
-  lightDesktop: "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/SteveAsterAfovo-DC.png",
-  lightMobile: "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/SteveAsterAfovo-MC.png",
-  darkDesktop: "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/SteveAsterAfovo-DW.png",
-  darkMobile: "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/SteveAsterAfovo-MW.png",
-  meta: "https://cdn.jsdelivr.net/gh/stafprintcenter/Files/Images/Other/meta.avif",
+  lightDesktop: logos.dc,
+  lightMobile: logos.mc,
+  darkDesktop: logos.dw,
+  darkMobile: logos.mw,
+  meta: logos.meta,
 };
 
 export const NAV = [
