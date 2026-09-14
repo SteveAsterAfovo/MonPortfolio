@@ -1,4 +1,4 @@
-import { identity, profile, SectionTitle, STAFPRINT_URL } from "@/lib/shared";
+import { identity, profile, SectionTitle } from "@/lib/shared";
 
 export function About() {
   return (
