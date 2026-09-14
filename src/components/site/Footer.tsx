@@ -1,4 +1,4 @@
-import { identity, STAFPRINT_URL } from "@/lib/shared";
+import { identity, STAFPRINT_URL } from "@/data/portfolio";
 import { SteveDeskLogo } from "@/components/site";
 
 export function Footer() {
