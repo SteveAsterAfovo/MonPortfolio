@@ -1,4 +1,5 @@
-import { certifications, identity, profile, projects, Stat, STAFPRINT_URL } from "@/data/portfolio";
+import { certifications, identity, profile, projects, STAFPRINT_URL } from "@/data/portfolio";
+import { Stat } from "@/components/site";
 
 export function Hero() {
   return (
