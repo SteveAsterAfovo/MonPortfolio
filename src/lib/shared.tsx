@@ -4,14 +4,6 @@ import logos from "@/assets/logos.json";
 
 export const { identity, profile, stack, stackIntro, stackFooter, projects, certifications, education, autodidact } = portfolioData;
 
-export const LOGOS = {
-  lightDesktop: logos.dc,
-  lightMobile: logos.mc,
-  darkDesktop: logos.dw,
-  darkMobile: logos.mw,
-  meta: logos.meta,
-};
-
 export const NAV = [
   { href: "#projets", label: "Projets" },
   { href: "#a-propos", label: "À propos" },
@@ -21,26 +13,6 @@ export const NAV = [
 
 export const STAFPRINT_URL = "https://stafprint.com/";
 export const WHATSAPP_URL = "https://wa.me/2290166523639";
-
-/** Logo adapté au thème (clair/sombre) et au format (mobile/desktop). */
-export function Logo({ className = "h-8 w-auto sm:h-9" }: { className?: string }) {
-  const { theme } = useTheme();
-  const dark = theme === "dark";
-  return (
-    <>
-      <img
-        src={dark ? LOGOS.darkMobile : LOGOS.lightMobile}
-        alt="Logo Steve Aster Afovo"
-        className={`${className} sm:hidden`}
-      />
-      <img
-        src={dark ? LOGOS.darkDesktop : LOGOS.lightDesktop}
-        alt="Logo Steve Aster Afovo"
-        className={`${className} hidden sm:block`}
-      />
-    </>
-  );
-}
 
 export function SectionTitle({ tag, title }: { tag: string; title: string }) {
   return (
