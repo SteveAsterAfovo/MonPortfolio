@@ -1,4 +1,4 @@
-import { autodidact, certifications, education } from "@/data/portfolio";
+import { autodidact, certifications, education } from "@/data/content";
 import { SectionTitle } from "@/components/site";
 
 export function Credentials() {
