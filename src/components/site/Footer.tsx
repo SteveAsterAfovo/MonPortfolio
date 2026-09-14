@@ -1,4 +1,4 @@
-import { identity } from "@/data/portfolio";
+import { identity } from "@/data/content";
 import { SteveDeskLogo } from "@/components/site";
 import { URL } from "@/data/content";
 
