@@ -1,4 +1,6 @@
-import { identity, profile, SectionTitle } from "@/data/portfolio";
+import { identity, profile } from "@/data/portfolio";
+import { SectionTitle } from "@/components/site";
+
 
 export function About() {
   return (
