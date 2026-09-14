@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { SiteShell, WhatsAppFab } from "@/components/site";
+import { SiteShell } from "@/components/site";
 import { Hero, Projects, About, Stack, Credentials, Contact } from "@/components/pages";
 import { identity, projects, stack, STAFPRINT_URL } from "@/data/portfolio";
 
@@ -82,7 +82,6 @@ function Index() {
         </main>
 
       </SiteShell>
-      <WhatsAppFab />
     </div>
   );
 }
