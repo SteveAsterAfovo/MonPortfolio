@@ -3,9 +3,11 @@ import { Header, Footer, CookieConsent, WhatsAppFab } from "./";
 
 export function SiteShell({ children }: { children: ReactNode }) {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="relative overflow-x-clip min-h-screen">
       <Header />
-      <main className="flex-1 pt-16 md:pt-20">{children}</main>
+      <main className="flex-1 pt-8">
+        {children}
+      </main>
       <Footer />
 
       <WhatsAppFab />
