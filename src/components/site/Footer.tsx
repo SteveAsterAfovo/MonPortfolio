@@ -1,10 +1,11 @@
-import { identity, Logo, STAFPRINT_URL } from "@/lib/shared";
+import { identity, STAFPRINT_URL } from "@/lib/shared";
+import { SteveDeskLogo, } from "@/components/site";
 
 export function Footer() {
   return (
     <footer className="relative z-10 border-t border-border">
       <div className="mx-auto flex max-w-6xl flex-col gap-5 px-4 py-10 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:px-6">
-        <Logo className="h-8 w-auto" />
+        <SteveDeskLogo className="mx-auto h-12 w-auto" />
         <span className="font-mono text-[10px] uppercase tracking-widest">
           {identity.location} - {identity.year}
         </span>
