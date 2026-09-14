@@ -1,6 +1,8 @@
+import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Logo, NAV } from "@/lib/shared";
 import { ThemeToggle } from "./ThemeToggle";
+import { SteveMobLogo, SteveDeskLogo } from "@/components/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -15,9 +17,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-3.5">
-        <a href="#top" className="flex min-w-0 items-center" onClick={() => setOpen(false)}>
-          <Logo />
-        </a>
+        <Link to="/" hash="top" className="flex min-w-0 items-center" onClick={() => setOpen(false)}>
+          <SteveMobLogo className="h-10 w-auto sm:hidden" />
+          <SteveDeskLogo className="hidden h-10 w-auto sm:block md:h-12" />
+        </Link>
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-muted-foreground md:flex">
           {NAV.map((n) => (
