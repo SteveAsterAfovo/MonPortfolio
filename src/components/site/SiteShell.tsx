@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Header, Footer, CookieConsent } from "./";
+import { Header, Footer, CookieConsent, WhatsAppFab } from "./";
 
 export function SiteShell({ children }: { children: ReactNode }) {
   return (
@@ -8,6 +8,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
       <main className="flex-1 pt-16 md:pt-20">{children}</main>
       <Footer />
 
+      <WhatsAppFab />
       <CookieConsent />
     </div>
   );
