@@ -61,7 +61,7 @@ export const portfolioData = {
     softSkills: ["Rigueur", "Créativité", "Autonomie", "Leadership"],
   },
   stackIntro:
-    "Une stack moderne, choisie pour la productivité et la fiabilité — du front pixel-perfect au back robuste, avec l'IA comme accélérateur.",
+    "Une stack moderne, choisie pour la productivité et la fiabilité - du front pixel-perfect au back robuste, avec l'IA comme accélérateur.",
   stack: [
     {
       label: "Frontend",
@@ -139,7 +139,7 @@ export const portfolioData = {
       long:
         "SuitOps regroupe les opérations critiques d'une PME africaine moderne : recrutement, gestion RH, facturation et productivité interne. Pensé pour une adoption rapide, avec une UX inspirée des meilleurs SaaS internationaux.",
       features: [
-        "Module Hire — pipeline candidat complet",
+        "Module Hire - pipeline candidat complet",
         "Facturation conforme normes locales",
         "Gestion RH (contrats, congés, paie)",
         "Espace productivité collaboratif",
@@ -184,7 +184,7 @@ export const portfolioData = {
       title: "EasyQuickTrack",
       role: "Développeur Principal",
       short:
-        "Outil léger de tracking SEO et analytics pour sites en croissance — installation en minutes.",
+        "Outil léger de tracking SEO et analytics pour sites en croissance - installation en minutes.",
       long:
         "EasyQuickTrack permet aux PME de suivre leurs performances SEO et leur trafic sans la complexité des suites entreprise. Installation rapide, tableaux clairs, alertes intelligentes.",
       features: [
@@ -229,7 +229,7 @@ export const portfolioData = {
       short:
         "Identité digitale et vitrine corporate de l'éditeur SaaS Pro Gestion Soft.",
       long:
-        "Site corporate de Pro Gestion Soft — éditeur de solutions de gestion pour le marché ouest-africain. Pensé comme une vitrine premium, performant, SEO-ready.",
+        "Site corporate de Pro Gestion Soft - éditeur de solutions de gestion pour le marché ouest-africain. Pensé comme une vitrine premium, performant, SEO-ready.",
       features: [
         "Performance Lighthouse > 95",
         "SEO multi-pages",
@@ -238,7 +238,7 @@ export const portfolioData = {
       ],
       stack: ["Nuxt.js", "Tailwind", "Netlify"],
       url: "https://progestionsoft.netlify.app/",
-      badge: "🏆 Lauréate — Résidence du Numérique, Labis Bénin 2021",
+      badge: "🏆 Lauréate - Résidence du Numérique, Labis Bénin 2021",
       logo: "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/PGS-MC.png",
       logoDesk: "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/PGS-DC.png",
     },
@@ -265,7 +265,7 @@ export const portfolioData = {
     },
   ] as Project[],
   certifications: [
-    { name: "AWS Academy — Cloud Foundation", org: "Amazon Web Services", date: "Mars 2026" },
+    { name: "AWS Academy - Cloud Foundation", org: "Amazon Web Services", date: "Mars 2026" },
     { name: "Prompt Design in Vertex AI", org: "Google Cloud", date: "Juin 2024" },
     { name: "Glide Certification Level 1", org: "Glide", date: "Oct. 2023" },
     { name: "Alumni Fondation Tony Elumenu", org: "TEF", date: "Déc. 2021" },
