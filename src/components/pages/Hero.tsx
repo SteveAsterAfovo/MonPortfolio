@@ -1,4 +1,4 @@
-import { certifications, identity, profile, projects, Stat, STAFPRINT_URL } from "@/lib/shared";
+import { certifications, identity, profile, projects, Stat, STAFPRINT_URL } from "@/data/portfolio";
 
 export function Hero() {
   return (
