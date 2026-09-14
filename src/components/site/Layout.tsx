@@ -5,7 +5,6 @@ export const NAV = [
   { href: "#parcours", label: "Parcours" },
 ];
 
-export const STAFPRINT_URL = "https://stafprint.com/";
 export const WHATSAPP_URL = "https://wa.me/2290166523639";
 
 export function SectionTitle({ tag, title }: { tag: string; title: string }) {
