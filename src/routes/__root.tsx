@@ -4,14 +4,14 @@ import { type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { ThemeProvider, themeInitScript } from "@/lib/theme";
 import { NotFoundComponent, ErrorComponent } from "@/components/errors";
-import { LOGOS, STAFPRINT_URL } from "@/lib/shared";
+import { STAFPRINT_URL } from "@/lib/shared";
+import logo from "@/assets/logos.json";
 
 // Constantes pour éviter les répétitions
 const AUTHOR_NAME = "Steve Aster D. AFOVO";
 const SITE_NAME = `${AUTHOR_NAME} - Portfolio`;
 const PAGE_TITLE = `${AUTHOR_NAME} | Développeur Fullstack & IA - Abomey-Calavi, Bénin`;
 const PAGE_DESC = `Portfolio de Steve Aster D. AFOVO, développeur fullstack IA-augmented et manager. Découvre mes projets, stack technique et expertises.`;
-const META_IMAGE = `${LOGOS.meta}`;
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => {
@@ -32,7 +32,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         { property: "og:description", content: PAGE_DESC },
         { property: "og:type", content: "profile" },
         { property: "og:site_name", content: SITE_NAME },
-        { property: "og:image", content: META_IMAGE },
+        { property: "og:image", content: `${logo.meta}` },
         { property: "og:image:width", content: "1200" },
         { property: "og:image:height", content: "630" },
         { property: "og:image:alt", content: SITE_NAME },
@@ -41,7 +41,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
         /* Twitter / X */
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:image", content: META_IMAGE },
+        { name: "twitter:image", content: `${logo.meta}` },
         { name: "twitter:title", content: PAGE_TITLE },
         { name: "twitter:description", content: PAGE_DESC },
         { name: "twitter:site", content: "@StafPrintCenter" },
@@ -74,7 +74,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               "@type": "Person",
               name: AUTHOR_NAME,
               jobTitle: "Développeur Fullstack & IA",
-              image: META_IMAGE,
+              image: `${logo.meta}`,
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Abomey-Calavi",
