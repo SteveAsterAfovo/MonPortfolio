@@ -1,4 +1,6 @@
-import { SectionTitle, stack, stackFooter, stackIntro } from "@/data/portfolio";
+import { stack, stackFooter, stackIntro } from "@/data/portfolio";
+import { SectionTitle } from "@/components/site";
+
 
 export function Stack() {
   return (
