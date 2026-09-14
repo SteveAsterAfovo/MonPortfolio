@@ -1,4 +1,4 @@
-import { identity, profile, SectionTitle } from "@/lib/shared";
+import { identity, profile, SectionTitle } from "@/data/portfolio";
 
 export function About() {
   return (
