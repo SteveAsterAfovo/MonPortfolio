@@ -6,7 +6,7 @@ export function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col gap-5 px-4 py-10 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:px-6">
         <Logo className="h-8 w-auto" />
         <span className="font-mono text-[10px] uppercase tracking-widest">
-          {identity.location} — {identity.year}
+          {identity.location} - {identity.year}
         </span>
         <div className="flex flex-wrap gap-4 sm:gap-6">
           <a
