@@ -93,10 +93,10 @@ export function CookieConsent() {
             <Cookie size={18} />
           </div>
           <div className="text-sm text-foreground/85">
-            <p className="font-display font-semibold text-foreground">J'utilisons des cookies</p>
+            <p className="font-display font-semibold text-foreground">Utilisation de cookies</p>
             <p className="mt-1 text-foreground/70">
-              J'utilisons Google Analytics pour comprendre l'usage de ce portfolio et l'améliorer. Vous pouvez accepter
-              ou refuser. Voir nos {" "}
+              J'utilise Google Analytics pour comprendre l'usage de ce portfolio et l'améliorer. Vous pouvez accepter
+              ou refuser. Voir les {" "}
               <a
                 href={`${STAFPRINT_BASE}/legal/mentions#cookies`}
                 target="_blank"
