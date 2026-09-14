@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Cookie } from "lucide-react";
-import { STAFPRINT_URL } from "@/data/portfolio";
+import { URL } from "@/data/content";
 
-const STAFPRINT_BASE = STAFPRINT_URL.replace(/\/+$/, "");
+const STAFPRINT_BASE = URL.STAFPRINT.replace(/\/+$/, "");
 
 const STORAGE_KEY = "spc_toolkit_cookie_consent_v1";
 const GA_ID = "G-BN33CS7ZZE";
