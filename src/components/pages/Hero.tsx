@@ -1,4 +1,5 @@
-import { certifications, identity, profile, projects } from "@/data/content";
+import { certifications, identity, profile } from "@/data/content";
+import { projects } from "@/data";
 import { Stat } from "@/components/site";
 import { URL } from "@/data/content";
 
