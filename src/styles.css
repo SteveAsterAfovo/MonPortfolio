@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system — Light Editorial.
+ * Design system - Light Editorial.
  * Fond clair, encre profonde, accent cobalt. Typo moderne (Sora / Plus Jakarta Sans).
  */
 
@@ -63,7 +63,7 @@
 :root {
   --radius: 0.875rem;
 
-  /* Light — gris/bleu très clair, jamais blanc pur */
+  /* Light - gris/bleu très clair, jamais blanc pur */
   --background: oklch(0.963 0.007 255);
   --foreground: oklch(0.215 0.022 265);
   --card: oklch(0.995 0.003 255);
