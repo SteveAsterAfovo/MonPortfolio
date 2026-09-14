@@ -5,7 +5,6 @@ export function Footer() {
   return (
     <footer className="relative z-10 border-t border-border">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-8 text-sm text-muted-foreground sm:px-6 md:flex-row md:justify-between md:gap-8 md:py-10">
-        {/* Logo */}
         <div className="shrink-0">
           <SteveDeskLogo className="h-10 w-auto sm:h-12" />
         </div>
