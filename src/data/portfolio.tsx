@@ -2,13 +2,6 @@ import { portfolioData } from "@/data/content";
 
 export const { identity, profile, stack, stackIntro, stackFooter, projects, certifications, education, autodidact } = portfolioData;
 
-export const NAV = [
-  { href: "#projets", label: "Projets" },
-  { href: "#a-propos", label: "À propos" },
-  { href: "#stack", label: "Stack" },
-  { href: "#parcours", label: "Parcours" },
-];
-
 export const STAFPRINT_URL = "https://stafprint.com/";
 export const WHATSAPP_URL = "https://wa.me/2290166523639";
 
