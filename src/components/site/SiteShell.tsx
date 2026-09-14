@@ -5,7 +5,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
   return (
     <div className="relative overflow-x-clip min-h-screen">
       <Header />
-      <main className="flex-1 pt-8">
+      <main className="mx-auto max-w-6xl px-4 sm:px-6">
         {children}
       </main>
       <Footer />
