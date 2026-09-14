@@ -1,7 +1,3 @@
-import { portfolioData } from "@/data/content";
-
-export const { identity, profile, stack, stackIntro, stackFooter, projects, certifications, education, autodidact } = portfolioData;
-
 export const NAV = [
   { href: "#projets", label: "Projets" },
   { href: "#a-propos", label: "À propos" },
