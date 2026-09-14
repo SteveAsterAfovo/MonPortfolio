@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Cookie } from "lucide-react";
-import { STAFPRINT_URL } from "@/lib/shared";
+import { STAFPRINT_URL } from "@/data/portfolio";
 
 const STAFPRINT_BASE = STAFPRINT_URL.replace(/\/+$/, "");
 
