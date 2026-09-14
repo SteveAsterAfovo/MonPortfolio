@@ -1,5 +1,6 @@
-import { identity, STAFPRINT_URL } from "@/data/portfolio";
+import { identity } from "@/data/portfolio";
 import { SteveDeskLogo } from "@/components/site";
+import { URL } from "@/data/content";
 
 export function Footer() {
   return (
@@ -40,7 +41,7 @@ export function Footer() {
           </a>
 
           <a
-            href={STAFPRINT_URL}
+            href={URL.STAFPRINT}
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors duration-300 hover:text-primary"
