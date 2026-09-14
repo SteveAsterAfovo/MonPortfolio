@@ -1,4 +1,4 @@
-import { identity, WHATSAPP_URL } from "@/lib/shared";
+import { identity, WHATSAPP_URL } from "@/data/portfolio";
 
 export function Contact() {
   return (
