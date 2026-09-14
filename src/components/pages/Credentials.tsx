@@ -1,4 +1,4 @@
-import { autodidact, certifications, education, SectionTitle } from "@/lib/shared";
+import { autodidact, certifications, education, SectionTitle } from "@/data/portfolio";
 
 export function Credentials() {
   return (
