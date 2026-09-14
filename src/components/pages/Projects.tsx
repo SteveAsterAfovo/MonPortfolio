@@ -1,4 +1,4 @@
-import { projects, SectionTitle } from "@/lib/shared";
+import { projects, SectionTitle } from "@/data/portfolio";
 
 export function Projects() {
   return (
