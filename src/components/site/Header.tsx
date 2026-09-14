@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { NAV } from "@/data/portfolio";
+import { NAV } from "@/components/site";
 import { ThemeToggle } from "./ThemeToggle";
 import { SteveMobLogo, SteveDeskLogo } from "@/components/site";
 
