@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteShell } from "@/components/site";
 import { Hero, Projects, About, Stack, Credentials, Contact } from "@/components/pages";
-import { identity, projects, stack, STAFPRINT_URL } from "@/data/portfolio";
+import { identity, projects, stack } from "@/data/portfolio";
+import { URL } from "@/data/content";
 
 const AUTHOR_NAME = "Steve Aster D. AFOVO";
 const SITE_NAME = `${AUTHOR_NAME} - Portfolio`;
@@ -37,11 +38,11 @@ export const Route = createFileRoute("/")({
           telephone: identity.phone,
           url: `https://${identity.portfolio}`,
           address: { "@type": "PostalAddress", addressLocality: "Abomey-Calavi", addressCountry: "BJ" },
-          sameAs: [`https://${identity.linkedin}`, `https://${identity.github}`, STAFPRINT_URL],
+          sameAs: [`https://${identity.linkedin}`, `https://${identity.github}`, URL.STAFPRINT],
           knowsAbout: stack.flatMap((c) => c.items),
           worksFor: [
             { "@type": "Organization", name: "Pro Gestion Soft" },
-            { "@type": "Organization", name: "STAF PRINT CENTER", url: STAFPRINT_URL },
+            { "@type": "Organization", name: "STAF PRINT CENTER", url: URL.STAFPRINT },
           ],
         }),
       },
