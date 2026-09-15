@@ -129,8 +129,6 @@ export const projects: Project[] = [
     ],
     stack: ["TypeScript", "Vue", "React", "Vite"],
     url: "https://pgs-axiom.netlify.app/",
-    logo: `${PGS_LOGO_BASE}/AXIOM-MC.png`,
-    logoDesk: `${PGS_LOGO_BASE}/AXIOM-DC.png`,
     extras: ["Disponible sur NPM : @progestionsoft/axiom"],
   },
   {
