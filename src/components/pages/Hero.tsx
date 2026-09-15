@@ -1,4 +1,3 @@
-import { certifications } from "@/data/content";
 import { Stat } from "@/components/site";
 import { identity, profile, projects, knowledge } from "@/data";
 import { LINKS } from "@/data/content";
