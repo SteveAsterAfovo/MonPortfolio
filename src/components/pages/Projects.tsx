@@ -44,6 +44,17 @@ export function Projects() {
               )}
             </div>
 
+            <div className="mt-6 overflow-hidden rounded-xl border border-border bg-secondary">
+              <img
+                src={screenshotUrl(project.url, i === 0 ? 1600 : 1000)}
+                alt={`Aperçu du site ${project.title}`}
+                loading="lazy"
+                width={1600}
+                height={1000}
+                className="aspect-16/10 w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+              />
+            </div>
+
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
               {i === 0 ? project.long : project.short}
             </p>
