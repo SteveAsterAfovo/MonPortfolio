@@ -1,15 +1,8 @@
-export type StackCategory = {
-  label: string;
-  icon: string;
-  items: string[];
-};
-
 export type Certification = {
   name: string;
   org: string;
   date: string;
 };
-
 
 export const URL = {
   STAFPRINT: "https://stafprint.com/",
