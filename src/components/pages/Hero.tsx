@@ -50,7 +50,7 @@ export function Hero() {
             <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground">En bref</p>
             <div className="mt-6 grid grid-cols-3 gap-3 sm:gap-4">
               <Stat value={String(projects.length)} label="Produits" />
-              <Stat value={String(certifications.length)} label="Certifs" />
+              <Stat value={String(knowledge.certifications.length)} label="Certifs" />
               <Stat value="5+" label="Ans" />
             </div>
             <div className="mt-6 space-y-3 border-t border-border pt-6 text-sm text-muted-foreground">
