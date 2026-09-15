@@ -1,4 +1,4 @@
-import { SectionTitle, ProjetsDeskLogo, screenshotUrl } from "@/components/site";
+import { SectionTitle, ProjetsLogo, screenshotUrl } from "@/components/site";
 import { projects } from "@/data/projects";
 
 export function Projects() {
@@ -33,7 +33,7 @@ export function Projects() {
                 )}
               </div>
 
-              <ProjetsDeskLogo
+              <ProjetsLogo
                 project={project.projectKey}
                 alt={`Logo du projet ${project.title}`}
                 className="h-7 w-auto max-w-22.5 shrink-0 opacity-80 transition-opacity duration-300 group-hover:opacity-100 sm:h-8 sm:max-w-30"
