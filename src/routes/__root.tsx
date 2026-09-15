@@ -3,7 +3,7 @@ import { Outlet, createRootRouteWithContext, HeadContent, Scripts } from "@tanst
 import { type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { NotFoundComponent, ErrorComponent } from "@/components/errors";
-import { URL } from "@/data/content";
+import { LINKS } from "@/data/content";
 import logo from "@/assets/logos.json";
 
 // Constantes pour éviter les répétitions
@@ -82,7 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               worksFor: {
                 "@type": "Organization",
                 name: "STAF PRINT CENTER",
-                url: URL.STAFPRINT
+                url: LINKS.STAFPRINT
               }
             }
           }),
