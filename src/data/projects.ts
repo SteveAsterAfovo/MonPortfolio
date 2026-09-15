@@ -77,6 +77,7 @@ export const projects: Project[] = [
   },
   {
     id: "hire",
+    projectKey: "hire",
     index: "03",
     category: "SAAS · RECRUITMENT & TALENT",
     title: "Hire",
