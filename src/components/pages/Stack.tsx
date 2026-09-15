@@ -7,7 +7,7 @@ export function Stack() {
     <section id="stack" className="border-b border-border py-14 sm:py-24">
       <SectionTitle tag="Stack" title="Les outils du métier" />
       <p className="mt-6 mb-10 max-w-[64ch] text-[0.975rem] leading-relaxed text-pretty text-muted-foreground sm:mb-12 sm:text-lg">
-        {stackIntro}
+        {stacks.intro}
       </p>
       <div className="grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
         {stack.map((cat) => (
