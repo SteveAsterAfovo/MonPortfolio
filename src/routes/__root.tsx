@@ -3,7 +3,7 @@ import { Outlet, createRootRouteWithContext, HeadContent, Scripts } from "@tanst
 import { type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { NotFoundComponent, ErrorComponent } from "@/components/errors";
-import { LINKS } from "@/data/content";
+import { LINKS } from "@/data";
 import logo from "@/assets/logos.json";
 
 // Constantes pour éviter les répétitions
