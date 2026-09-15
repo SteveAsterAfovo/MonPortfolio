@@ -16,4 +16,4 @@ export const certifications = [
 export const education = [
   { name: "Licence Pro Finance Contrôle & Audit", org: "UPAO", date: "2017" },
   { name: "Baccalauréat G2 Comptabilité", org: "LTC Porto-Novo", date: "2014" },
-],
+];
