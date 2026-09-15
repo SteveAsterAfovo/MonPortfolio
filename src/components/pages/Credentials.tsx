@@ -44,7 +44,7 @@ export function Credentials() {
           <div className="card-flat rounded-2xl p-5 sm:p-8">
             <h3 className="font-mono text-[10px] uppercase tracking-[0.24em] text-primary">Autodidacte</h3>
             <div className="mt-6 flex flex-wrap gap-2">
-              {autodidact.map((a) => (
+              {profile.autodidact.map((a) => (
                 <span key={a} className="rounded-full border border-border bg-secondary px-3 py-1 text-xs">
                   {a}
                 </span>
