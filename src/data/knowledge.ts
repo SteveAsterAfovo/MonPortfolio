@@ -10,7 +10,7 @@ export const knowledge = {
     {
       name: "Excel Fundamentals for Data Analysis",
       org: "Macquarie University", date: "Sept. 2026",
-      url: "https://coursera.org/verify/example-excel"
+      url: "https://www.coursera.org/account/accomplishments/verify/SVYT5RBCZDDD",
     },
     {
       name: "Code Yourself! An Introduction to Programming",
