@@ -19,6 +19,8 @@ export type Project = {
   logoDesk?: string;
 };
 
+const CDN_BASE = "https://cdn.jsdelivr.net/gh";
+
 export const projects = [
   {
     id: "cypass",
