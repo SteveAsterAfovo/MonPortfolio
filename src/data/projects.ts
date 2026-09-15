@@ -114,6 +114,7 @@ export const projects: Project[] = [
   },
   {
     id: "axiom",
+    projectKey: "axiom",
     index: "05",
     category: "OPEN SOURCE · DEVELOPER TOOLS",
     title: "AXIOM",
