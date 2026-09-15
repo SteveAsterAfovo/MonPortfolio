@@ -32,8 +32,9 @@ export const knowledge = {
       url: "https://anthropic.com/verify/example-claude"
     },
     {
-      name: "Certificate of Completion: Al Fluency Framework & Foundations",
-      org: "Anthropic", date: "Juil. 2026"
+      name: "Al Fluency Framework & Foundations",
+      org: "Anthropic", date: "Juil. 2026",
+      url: "https://verify.skilljar.com/c/92j94pkbxdh2",
     },
     {
       name: "AWS Academy - Cloud Foundation",
