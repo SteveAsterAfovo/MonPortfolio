@@ -48,8 +48,8 @@ export const projects = [
     ],
     partners: ["ASIN", "BJ-CSIRT", "ARCEP", "Ministère du Numérique", "APIEX"],
     status: "updated",
-    logo: "https://cdn.jsdelivr.net/gh/JustToHideMyPublicRepository/Files/Images/Logos/CYPASS-MC.png",
-    logoDesk: "https://cdn.jsdelivr.net/gh/JustToHideMyPublicRepository/Files/Images/Logos/CYPASS-DC.png",
+    logo: `${CDN_BASE}/JustToHideMyPublicRepository/Files/Images/Logos/CYPASS-MC.png`,
+    logoDesk: `${CDN_BASE}/JustToHideMyPublicRepository/Files/Images/Logos/CYPASS-DC.png`,
   },
   {
     id: "suitops",
@@ -67,8 +67,8 @@ export const projects = [
     ],
     stack: ["Nuxt.js", "Node.js", "Sails.js", "Tailwind", "PostgreSQL"],
     url: "https://suitops.netlify.app/",
-    logo: "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/SuitOps-MC.png",
-    logoDesk: "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/SuitOps-DC.png",
+    logo: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/SuitOps-MC.png`,
+    logoDesk: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/SuitOps-DC.png`,
     modules: [
       { icon: "👥", name: "Hire" },
       { icon: "🧾", name: "Facturation" },
