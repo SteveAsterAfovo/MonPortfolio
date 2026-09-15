@@ -1,4 +1,3 @@
-import { certifications, education } from "@/data/content";
 import { SectionTitle } from "@/components/site";
 import { profile, knowledge } from "@/data";
 
