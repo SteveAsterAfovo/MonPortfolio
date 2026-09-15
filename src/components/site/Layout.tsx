@@ -28,3 +28,9 @@ export function Stat({ value, label }: { value: string; label: string }) {
     </div>
   );
 }
+
+export function screenshotUrl(url: string, width = 1200) {
+  return `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=${width}&h=${Math.round(
+    (width * 10) / 16,
+  )}`;
+}
