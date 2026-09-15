@@ -1,31 +1,99 @@
+import { useState } from "react";
 import { SectionTitle } from "@/components/site";
 import { profile, knowledge } from "@/data";
 
+const ITEMS_PER_PAGE = 4;
+
 export function Credentials() {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const totalPages = Math.ceil(knowledge.certifications.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const paginatedCertifications = knowledge.certifications.slice(
+    startIndex,
+    startIndex + ITEMS_PER_PAGE
+  );
+
   return (
     <section id="parcours" className="border-b border-border py-14 sm:py-24">
       <SectionTitle tag="Parcours" title="Certifications & formation" />
       <div className="mt-10 grid grid-cols-12 gap-4 sm:mt-12 sm:gap-5">
         <div className="col-span-12 min-w-0 md:col-span-7">
-          <div className="card-flat rounded-2xl p-5 sm:p-8">
-            <h3 className="font-mono text-[10px] uppercase tracking-[0.24em] text-primary">
-              Certifications
-            </h3>
-            <ul className="mt-6 divide-y divide-border">
-              {knowledge.certifications.map((c) => (
-                <li key={c.name} className="flex items-baseline justify-between gap-4 py-3.5">
-                  <div className="min-w-0">
-                    <div className="text-sm font-medium">{c.name}</div>
-                    <div className="text-xs text-muted-foreground">{c.org}</div>
-                  </div>
-                  <span className="shrink-0 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                    {c.date}
-                  </span>
-                </li>
-              ))}
-            </ul>
+          <div className="card-flat flex h-full flex-col justify-between rounded-2xl p-5 sm:p-8">
+            <div>
+              <div className="flex items-center justify-between">
+                <h3 className="font-mono text-[10px] uppercase tracking-[0.24em] text-primary">
+                  Certifications
+                </h3>
+                <span className="font-mono text-xs text-muted-foreground">
+                  Page {currentPage} / {totalPages}
+                </span>
+              </div>
+
+              <ul className="mt-6 divide-y divide-border">
+                {paginatedCertifications.map((c) => (
+                  <li key={c.name} className="flex items-baseline justify-between gap-4 py-3.5">
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-2">
+                        <span className="text-sm font-medium">{c.name}</span>
+                        {c.url && (
+                          <a
+                            href={c.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-xs text-primary hover:underline"
+                            title="Vérifier le certificat"
+                          >
+                            ↗
+                          </a>
+                        )}
+                      </div>
+                      <div className="text-xs text-muted-foreground">{c.org}</div>
+                    </div>
+                    <span className="shrink-0 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                      {c.date}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+              <div className="mt-6 flex items-center justify-between border-t border-border pt-4">
+                <button
+                  onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                  disabled={currentPage === 1}
+                  className="rounded-lg border border-border px-3 py-1.5 text-xs font-medium transition-colors hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-40"
+                >
+                  ← Précédent
+                </button>
+                <div className="flex gap-1">
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                    <button
+                      key={page}
+                      onClick={() => setCurrentPage(page)}
+                      className={`h-7 w-7 rounded-lg text-xs font-mono transition-colors ${currentPage === page
+                        ? "bg-primary text-primary-foreground"
+                        : "border border-border hover:bg-secondary"
+                        }`}
+                    >
+                      {page}
+                    </button>
+                  ))}
+                </div>
+                <button
+                  onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+                  disabled={currentPage === totalPages}
+                  className="rounded-lg border border-border px-3 py-1.5 text-xs font-medium transition-colors hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-40"
+                >
+                  Suivant →
+                </button>
+              </div>
+            )}
           </div>
         </div>
+
         <div className="col-span-12 min-w-0 space-y-4 sm:space-y-5 md:col-span-5">
           <div className="card-flat rounded-2xl p-5 sm:p-8">
             <h3 className="font-mono text-[10px] uppercase tracking-[0.24em] text-primary">Formation</h3>
