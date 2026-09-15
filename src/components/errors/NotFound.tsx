@@ -1,16 +1,12 @@
-import { ArrowLeft, Home, Sparkles } from "lucide-react";
+import { ArrowLeft, Terminal } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 
 export function NotFoundComponent() {
   return (
-    <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-background px-6 py-16">
-      {/* Background décoratif */}
+    <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-background px-4 py-12">
+      {/* Background */}
       <div className="pointer-events-none absolute inset-0">
-        {/* Halo */}
-        <div className="absolute left-1/2 top-1/2 size-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-3xl" />
-
-        {/* Grille */}
         <div
           className="absolute inset-0 opacity-[0.025]"
           style={{
@@ -18,110 +14,137 @@ export function NotFoundComponent() {
               linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
               linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)
             `,
-            backgroundSize: "48px 48px",
+            backgroundSize: "40px 40px",
           }}
         />
+
+        <div className="absolute left-1/2 top-1/2 size-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-[120px]" />
       </div>
 
-      <section className="relative z-10 w-full max-w-2xl text-center">
-        {/* 404 */}
-        <div className="relative mx-auto w-fit">
-          <span className="select-none font-display text-[clamp(8rem,25vw,14rem)] font-black leading-none tracking-[-0.08em] text-foreground/[0.04]">
-            404
-          </span>
+      <section className="relative z-10 w-full max-w-3xl">
+        {/* Terminal window */}
+        <div className="overflow-hidden rounded-xl border border-border bg-card shadow-2xl">
+          {/* Terminal header */}
+          <div className="flex h-11 items-center border-b border-border bg-muted/40 px-4">
+            <div className="flex items-center gap-1.5">
+              <span className="size-2.5 rounded-full bg-red-500/70" />
+              <span className="size-2.5 rounded-full bg-yellow-500/70" />
+              <span className="size-2.5 rounded-full bg-green-500/70" />
+            </div>
 
-          {/* Icône centrale */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="flex size-20 items-center justify-center rounded-3xl border border-border bg-background/90 shadow-xl backdrop-blur sm:size-24">
-              <Sparkles className="size-8 text-primary sm:size-10" />
+            <div className="mx-auto flex items-center gap-2 font-mono text-[11px] text-muted-foreground">
+              <Terminal className="size-3.5" />
+              terminal
+            </div>
+
+            <div className="w-[52px]" />
+          </div>
+
+          {/* Terminal */}
+          <div className="p-5 font-mono text-xs leading-6 sm:p-8 sm:text-sm">
+            <div className="text-muted-foreground">
+              <span className="text-primary">developer</span>
+              <span className="text-muted-foreground">@</span>
+              <span className="text-foreground">portfolio</span>
+              <span className="text-muted-foreground">:~$ </span>
+              <span>navigate /page</span>
+            </div>
+
+            <div className="mt-4 text-muted-foreground">
+              GET /page HTTP/1.1
+            </div>
+
+            <div className="mt-1 text-red-400">
+              HTTP/1.1 404 Not Found
+            </div>
+
+            <div className="mt-1 text-muted-foreground">
+              route: <span className="text-foreground">undefined</span>
+            </div>
+
+            <div className="mt-1 text-muted-foreground">
+              status: <span className="text-red-400">NOT_FOUND</span>
+            </div>
+
+            <div className="my-6 border-t border-border" />
+
+            {/* Main error */}
+            <div className="text-center sm:text-left">
+              <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-end">
+                <span className="text-7xl font-black tracking-tighter text-primary sm:text-8xl">
+                  404
+                </span>
+
+                <div className="pb-2">
+                  <p className="text-base font-semibold text-foreground">
+                    Route introuvable
+                  </p>
+
+                  <p className="text-xs text-muted-foreground">
+                    This page doesn't exist in this build.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="my-6 border-t border-border" />
+
+            {/* Fake stack trace */}
+            <div className="space-y-1 text-[11px] text-muted-foreground sm:text-xs">
+              <p>
+                <span className="text-red-400">Error:</span>{" "}
+                Cannot find requested resource
+              </p>
+
+              <p className="pl-4">
+                at <span className="text-foreground">Router.resolve()</span>
+              </p>
+
+              <p className="pl-4">
+                at <span className="text-foreground">Application.handle()</span>
+              </p>
+
+              <p className="pl-4">
+                at <span className="text-foreground">main.tsx:404</span>
+              </p>
+            </div>
+
+            <div className="mt-6 text-muted-foreground">
+              <span className="text-primary">developer</span>
+              <span className="text-muted-foreground">@</span>
+              <span className="text-foreground">portfolio</span>
+              <span className="text-muted-foreground">:~$ </span>
+              <span className="text-foreground">
+                cd /home
+              </span>
+              <span className="ml-1 inline-block h-4 w-2 animate-pulse bg-primary align-middle" />
             </div>
           </div>
         </div>
 
-        {/* Contenu */}
-        <div className="mt-2">
-          <p className="mb-3 font-mono text-xs font-semibold uppercase tracking-[0.25em] text-primary">
-            Erreur 404
+        {/* Actions */}
+        <div className="mt-6 flex flex-col items-center justify-between gap-4 sm:flex-row">
+          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+            // End of execution
           </p>
 
-          <h1 className="font-display text-3xl font-bold tracking-tight sm:text-5xl">
-            Cette page n'existe pas.
-          </h1>
+          <div className="flex gap-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => window.history.back()}
+            >
+              <ArrowLeft className="mr-2 size-3.5" />
+              Retour
+            </Button>
 
-          <p className="mx-auto mt-5 max-w-lg text-sm leading-7 text-muted-foreground sm:text-base">
-            J’ai cherché partout. Dans mes projets, dans mon code,
-            même dans les endroits où personne ne devrait regarder.
-            Rien.
-          </p>
-
-          <p className="mx-auto mt-2 max-w-lg text-sm leading-7 text-muted-foreground sm:text-base">
-            Le lien que vous avez suivi est peut-être incorrect ou
-            cette page a simplement décidé de prendre sa retraite.
-          </p>
-        </div>
-
-        {/* Mini terminal */}
-        <div className="mx-auto mt-8 max-w-md overflow-hidden rounded-xl border border-border bg-card/70 text-left shadow-sm backdrop-blur">
-          {/* Header */}
-          <div className="flex items-center gap-1.5 border-b border-border px-4 py-3">
-            <span className="size-2.5 rounded-full bg-destructive/60" />
-            <span className="size-2.5 rounded-full bg-yellow-500/60" />
-            <span className="size-2.5 rounded-full bg-green-500/60" />
-
-            <span className="ml-auto font-mono text-[10px] text-muted-foreground">
-              portfolio://404
-            </span>
-          </div>
-
-          {/* Terminal content */}
-          <div className="space-y-2 p-4 font-mono text-xs">
-            <p className="text-muted-foreground">
-              <span className="text-primary">&gt;</span>{" "}
-              recherche_de_la_page...
-            </p>
-
-            <p className="text-muted-foreground">
-              <span className="text-primary">&gt;</span>{" "}
-              vérification_des_projets...
-            </p>
-
-            <p className="text-destructive">
-              <span>✕</span>{" "}
-              PAGE_NOT_FOUND
-            </p>
-
-            <p className="text-muted-foreground">
-              <span className="text-primary">&gt;</span>{" "}
-              destination_sécurisée : accueil
-            </p>
+            <Button asChild size="sm">
+              <Link to="/">
+                cd ~
+              </Link>
+            </Button>
           </div>
         </div>
-
-        {/* Boutons */}
-        <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-          <Button asChild size="lg">
-            <Link to="/">
-              <Home className="mr-2 size-4" />
-              Retour à l'accueil
-            </Link>
-          </Button>
-
-          <Button asChild variant="outline" size="lg">
-            <Link to="/" hash="projects">
-              Voir mes projets
-            </Link>
-          </Button>
-        </div>
-
-        {/* Retour précédent */}
-        <button
-          type="button"
-          onClick={() => window.history.back()}
-          className="mt-8 inline-flex items-center gap-2 text-xs text-muted-foreground transition-colors hover:text-foreground"
-        >
-          <ArrowLeft className="size-3.5" />
-          Revenir à la page précédente
-        </button>
       </section>
     </main>
   );
