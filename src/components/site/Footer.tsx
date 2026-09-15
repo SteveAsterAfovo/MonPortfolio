@@ -45,7 +45,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className="transition-colors duration-300 hover:text-primary"
           >
-            STAF PRINT CENTER
+            {identity.company}
           </a>
         </nav>
       </div>
