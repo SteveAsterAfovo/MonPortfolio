@@ -149,8 +149,6 @@ export const projects: Project[] = [
     stack: ["Nuxt.js", "Tailwind", "Netlify"],
     url: "https://progestionsoft.netlify.app/",
     badge: "🏆 Lauréate - Résidence du Numérique, Labis Bénin 2021",
-    logo: `${PGS_LOGO_BASE}/PGS-MC.png`,
-    logoDesk: `${PGS_LOGO_BASE}/PGS-DC.png`,
   },
   {
     id: "pgsdocs",
