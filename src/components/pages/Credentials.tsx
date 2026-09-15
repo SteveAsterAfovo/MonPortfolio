@@ -13,7 +13,7 @@ export function Credentials() {
               Certifications
             </h3>
             <ul className="mt-6 divide-y divide-border">
-              {certifications.map((c) => (
+              {knowledge.certifications.map((c) => (
                 <li key={c.name} className="flex items-baseline justify-between gap-4 py-3.5">
                   <div className="min-w-0">
                     <div className="text-sm font-medium">{c.name}</div>
