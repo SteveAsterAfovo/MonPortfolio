@@ -21,4 +21,3 @@ export const education = [
 
 
 export type PortfolioData = typeof portfolioData;
-export const { autodidact } = portfolioData;
