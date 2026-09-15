@@ -10,7 +10,7 @@ export function Stack() {
         {stacks.intro}
       </p>
       <div className="grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
-        {stack.map((cat) => (
+        {stacks.detail.map((cat) => (
           <div key={cat.label} className="card-flat card-hover min-w-0 rounded-2xl p-5 sm:p-7">
             <h3 className="font-display text-lg font-semibold tracking-[-0.02em]">{cat.label}</h3>
             <div className="mt-5 flex flex-wrap gap-2">
