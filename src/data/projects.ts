@@ -167,7 +167,5 @@ export const projects: Project[] = [
     ],
     stack: ["VitePress", "Markdown", "TypeScript"],
     url: "https://pgsdocs.netlify.app/",
-    logo: `${PGS_LOGO_BASE}/PGSDocs-MC.png`,
-    logoDesk: `${PGS_LOGO_BASE}/PGSDocs-DC.png`,
   },
 ] as Project[];
