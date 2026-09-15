@@ -6,10 +6,10 @@
   "meta": "https://cdn.jsdelivr.net/gh/stafprintcenter/Files/Images/Other/meta.avif",
   "projets": {
     "cypass": {
-      "mc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/Cypass-MC.png",
-      "dc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/Cypass-DC.png",
-      "mw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/Cypass-MW.png",
-      "dw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/Cypass-DW.png"
+      "mc": "https://cdn.jsdelivr.net/gh/JustToHideMyPublicRepository/Files/Images/Logos/CYPASS-MC.png",
+      "mw": "https://cdn.jsdelivr.net/gh/JustToHideMyPublicRepository/Files/Images/Logos/CYPASS-MW.png",
+      "dc": "https://cdn.jsdelivr.net/gh/JustToHideMyPublicRepository/Files/Images/Logos/CYPASS-DC.png",
+      "dw": "https://cdn.jsdelivr.net/gh/JustToHideMyPublicRepository/Files/Images/Logos/CYPASS-DW.png"
     },
     "suitops": {
       "mc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/SuitOps-MC.png",
