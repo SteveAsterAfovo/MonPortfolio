@@ -152,6 +152,7 @@ export const projects: Project[] = [
   },
   {
     id: "pgsdocs",
+    projectKey: "pgsdocs",
     index: "07",
     category: "DOCUMENTATION TECHNIQUE",
     title: "PGS Docs",
