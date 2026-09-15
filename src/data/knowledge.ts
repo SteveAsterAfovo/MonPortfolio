@@ -15,7 +15,7 @@ export const knowledge = {
     {
       name: "Code Yourself! An Introduction to Programming",
       org: "The University of Edinburgh", date: "Août 2026",
-      url: "https://coursera.org/verify/example-code"
+      url: "https://www.coursera.org/account/accomplishments/verify/0LGEOS9R46QU",
     },
     {
       name: "Basic Information Literacy",
