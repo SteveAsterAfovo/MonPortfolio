@@ -39,7 +39,7 @@ export const knowledge = {
     {
       name: "AWS Academy - Cloud Foundation",
       org: "Amazon Web Services", date: "Mars 2026",
-      url: "https://aws.amazon.com/verify/example-aws"
+      url: "https://www.credly.com/badges/f982f5ea-822d-4c63-b921-870d64edda32/linked_in_profile",
     },
     {
       name: "Prompt Design in Vertex AI",
