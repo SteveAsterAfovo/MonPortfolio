@@ -20,6 +20,7 @@ export type Project = {
 };
 
 const CDN_BASE = "https://cdn.jsdelivr.net/gh";
+const CYPASS_LOGO_BASE = `${CDN_BASE}/JustToHideMyPublicRepository/Files/Images/Logos`;
 const PGS_LOGO_BASE = `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos`;
 
 export const projects = [
@@ -49,8 +50,8 @@ export const projects = [
     ],
     partners: ["ASIN", "BJ-CSIRT", "ARCEP", "Ministère du Numérique", "APIEX"],
     status: "updated",
-    logo: `${CDN_BASE}/JustToHideMyPublicRepository/Files/Images/Logos/CYPASS-MC.png`,
-    logoDesk: `${CDN_BASE}/JustToHideMyPublicRepository/Files/Images/Logos/CYPASS-DC.png`,
+    logo: `${CYPASS_LOGO_BASE}/CYPASS-MC.png`,
+    logoDesk: `${CYPASS_LOGO_BASE}/CYPASS-DC.png`,
   },
   {
     id: "suitops",
@@ -113,8 +114,8 @@ export const projects = [
     ],
     stack: ["React", "Node.js", "MongoDB", "Chart.js"],
     url: "https://eqt.netlify.app/",
-    logo: `${CDN_BASE}/${PGS_LOGO_BASE}/EQT-MC.png`,
-    logoDesk: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/EQT-DC.png`,
+    logo: `${PGS_LOGO_BASE}/EQT-MC.png`,
+    logoDesk: `${PGS_LOGO_BASE}/EQT-DC.png`,
   },
   {
     id: "axiom",
