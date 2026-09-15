@@ -11,7 +11,7 @@ export const certifications = [
   { name: "Alumni Fondation Tony Elumenu", org: "TEF", date: "Déc. 2021" },
   { name: "Prix Résidences du Numérique", org: "Labis Bénin", date: "Sept. 2021" },
   { name: "HTML5 + CSS", org: "OpenClassrooms", date: "Août 2023" },
-] as Certification[],
+] as Certification[];
 
 export const education = [
   { name: "Licence Pro Finance Contrôle & Audit", org: "UPAO", date: "2017" },
