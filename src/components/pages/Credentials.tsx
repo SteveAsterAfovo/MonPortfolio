@@ -8,8 +8,11 @@ const ITEMS_PER_PAGE = 4;
 export function Credentials() {
   const [currentPage, setCurrentPage] = useState(1);
 
-  const totalPages = Math.ceil(knowledge.certifications.length / ITEMS_PER_PAGE);
+  const totalItems = knowledge.certifications.length;
+  const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, totalItems);
+
   const paginatedCertifications = knowledge.certifications.slice(
     startIndex,
     startIndex + ITEMS_PER_PAGE
@@ -22,12 +25,12 @@ export function Credentials() {
         <div className="col-span-12 min-w-0 md:col-span-7">
           <div className="card-flat flex h-full flex-col justify-between rounded-2xl p-5 sm:p-8">
             <div>
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between gap-2">
                 <h3 className="font-mono text-[10px] uppercase tracking-[0.24em] text-primary">
-                  Certifications
+                  Certifications ({totalItems})
                 </h3>
                 <span className="font-mono text-xs text-muted-foreground">
-                  Page {currentPage} / {totalPages}
+                  {startIndex + 1}-{endIndex} sur {totalItems} · Page {currentPage}/{totalPages}
                 </span>
               </div>
 
@@ -53,7 +56,10 @@ export function Credentials() {
                       >
                         <div className="min-w-0 flex-1">
                           <div className="flex items-center gap-2">
-                            <span className={`text-sm font-medium ${c.url ? "group-hover:text-primary transition-colors" : ""}`}>
+                            <span
+                              className={`text-sm font-medium ${c.url ? "group-hover:text-primary transition-colors" : ""
+                                }`}
+                            >
                               {c.name}
                             </span>
                             {c.url && (
