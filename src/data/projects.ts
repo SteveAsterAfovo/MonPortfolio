@@ -168,4 +168,4 @@ export const projects: Project[] = [
     stack: ["VitePress", "Markdown", "TypeScript"],
     url: "https://pgsdocs.netlify.app/",
   },
-] as Project[];
+];
