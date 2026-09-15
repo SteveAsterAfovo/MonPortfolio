@@ -1,25 +1,3 @@
-export type Project = {
-  id: string;
-  index: string;
-  category: string;
-  title: string;
-  subtitle?: string;
-  role: string;
-  short: string;
-  long: string;
-  features: string[];
-  stack: string[];
-  url: string;
-  extras?: string[];
-  modules?: { icon: string; name: string }[];
-  partners?: string[];
-  badge?: string;
-  status?: "new" | "updated";
-  logo?: string;
-  logoDesk?: string;
-};
-
-
 export type Certification = {
   name: string;
   org: string;
