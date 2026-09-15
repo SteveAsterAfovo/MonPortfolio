@@ -29,7 +29,7 @@ export const knowledge = {
     {
       name: "Claude 101",
       org: "Anthropic", date: "Juil. 2026",
-      url: "https://anthropic.com/verify/example-claude"
+      url: "https://verify.skilljar.com/c/w4ppzqn5ycyc",
     },
     {
       name: "Al Fluency Framework & Foundations",
