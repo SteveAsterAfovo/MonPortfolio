@@ -1,6 +1,6 @@
-import { certifications, identity, profile } from "@/data/content";
-import { projects } from "@/data";
+import { certifications } from "@/data/content";
 import { Stat } from "@/components/site";
+import { identity, profile, projects } from "@/data";
 import { LINKS } from "@/data/content";
 
 export function Hero() {
