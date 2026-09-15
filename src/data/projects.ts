@@ -50,8 +50,6 @@ export const projects: Project[] = [
     ],
     partners: ["ASIN", "BJ-CSIRT", "ARCEP", "Ministère du Numérique", "APIEX"],
     status: "updated",
-    logo: `${CYPASS_LOGO_BASE}/CYPASS-MC.png`,
-    logoDesk: `${CYPASS_LOGO_BASE}/CYPASS-DC.png`,
   },
   {
     id: "suitops",
