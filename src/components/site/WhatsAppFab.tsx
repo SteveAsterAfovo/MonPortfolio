@@ -1,9 +1,9 @@
-import { URL } from "@/data/content";
+import { LINKS } from "@/data/content";
 
 export function WhatsAppFab() {
   return (
     <a
-      href={URL.WHATSAPP}
+      href={LINKS.WHATSAPP}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Discuter sur WhatsApp"
