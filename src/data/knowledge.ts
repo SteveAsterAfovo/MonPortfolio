@@ -44,7 +44,7 @@ export const knowledge = {
     {
       name: "Prompt Design in Vertex AI",
       org: "Google Cloud", date: "Juin 2024",
-      url: "https://cloud.google.com/verify/example-vertex"
+      url: "https://www.skills.google/public_profiles/6d6290e1-1590-40f5-90d2-fbc64f1ca449/badges/9287988",
     },
     {
       name: "Lancez votre Startup digitale en 8 semaines",
