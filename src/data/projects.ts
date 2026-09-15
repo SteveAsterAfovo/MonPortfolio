@@ -27,10 +27,8 @@ export const projects = [
     title: "CYPASS",
     subtitle: "Cybersecurity Platform for Assurance, Surveillance and Support",
     role: "Architecte & Chef de Projet",
-    short:
-      "Plateforme nationale de cybersécurité regroupant surveillance, scan, contrôle documentaire et veille de fuites.",
-    long:
-      "CYPASS est une plateforme SaaS intégrée destinée aux institutions et entreprises, avec quatre modules couvrant tout le cycle de cyberdéfense : DocSentry, VigiTech, SecuScan et LeakMonitor. Architecture multi-tenant, audit trail, conformité ASIN.",
+    short: "Plateforme nationale de cybersécurité regroupant surveillance, scan, contrôle documentaire et veille de fuites.",
+    long: "CYPASS est une plateforme SaaS intégrée destinée aux institutions et entreprises, avec quatre modules couvrant tout le cycle de cyberdéfense : DocSentry, VigiTech, SecuScan et LeakMonitor. Architecture multi-tenant, audit trail, conformité ASIN.",
     features: [
       "Surveillance temps réel des actifs numériques",
       "Scan automatisé de vulnérabilités",
@@ -57,10 +55,8 @@ export const projects = [
     category: "SAAS · BUSINESS SUITE",
     title: "SuitOps",
     role: "Architecte & Développeur Principal",
-    short:
-      "Suite business modulaire pour PME : recrutement, facturation, RH et productivité dans une seule plateforme.",
-    long:
-      "SuitOps regroupe les opérations critiques d'une PME africaine moderne : recrutement, gestion RH, facturation et productivité interne. Pensé pour une adoption rapide, avec une UX inspirée des meilleurs SaaS internationaux.",
+    short: "Suite business modulaire pour PME : recrutement, facturation, RH et productivité dans une seule plateforme.",
+    long: "SuitOps regroupe les opérations critiques d'une PME africaine moderne : recrutement, gestion RH, facturation et productivité interne. Pensé pour une adoption rapide, avec une UX inspirée des meilleurs SaaS internationaux.",
     features: [
       "Module Hire - pipeline candidat complet",
       "Facturation conforme normes locales",
@@ -84,10 +80,8 @@ export const projects = [
     category: "SAAS · RECRUITMENT & TALENT",
     title: "Hire",
     role: "Développeur Principal",
-    short:
-      "Plateforme moderne qui connecte les talents aux meilleures opportunités professionnelles.",
-    long:
-      "Hire est une solution complète pour recruteurs et candidats : recherche avancée, suivi des candidatures, messagerie intégrée et recommandations intelligentes. Module phare de la suite SuitOps.",
+    short: "Plateforme moderne qui connecte les talents aux meilleures opportunités professionnelles.",
+    long: "Hire est une solution complète pour recruteurs et candidats : recherche avancée, suivi des candidatures, messagerie intégrée et recommandations intelligentes. Module phare de la suite SuitOps.",
     features: [
       "Recherche et filtrage avancé des candidats",
       "Suivi des candidatures en temps réel",
@@ -106,10 +100,8 @@ export const projects = [
     category: "WEB APP · SEO & ANALYTICS",
     title: "EasyQuickTrack",
     role: "Développeur Principal",
-    short:
-      "Outil léger de tracking SEO et analytics pour sites en croissance - installation en minutes.",
-    long:
-      "EasyQuickTrack permet aux PME de suivre leurs performances SEO et leur trafic sans la complexité des suites entreprise. Installation rapide, tableaux clairs, alertes intelligentes.",
+    short: "Outil léger de tracking SEO et analytics pour sites en croissance - installation en minutes.",
+    long: "EasyQuickTrack permet aux PME de suivre leurs performances SEO et leur trafic sans la complexité des suites entreprise. Installation rapide, tableaux clairs, alertes intelligentes.",
     features: [
       "Tracking SEO multi-keywords",
       "Dashboard analytics simplifié",
@@ -127,10 +119,8 @@ export const projects = [
     category: "OPEN SOURCE · DEVELOPER TOOLS",
     title: "AXIOM",
     role: "Auteur & Mainteneur Principal",
-    short:
-      "Librairie open source de composants UI et utilitaires pour accélérer les projets Vue/React.",
-    long:
-      "AXIOM est une boîte à outils de composants accessibles, design tokens et helpers TS, conçue pour standardiser la qualité au sein de Pro Gestion Soft puis ouverte à la communauté.",
+    short: "Librairie open source de composants UI et utilitaires pour accélérer les projets Vue/React.",
+    long: "AXIOM est une boîte à outils de composants accessibles, design tokens et helpers TS, conçue pour standardiser la qualité au sein de Pro Gestion Soft puis ouverte à la communauté.",
     features: [
       "Composants accessibles (WCAG AA)",
       "Design tokens portables",
