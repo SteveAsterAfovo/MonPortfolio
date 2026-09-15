@@ -5,5 +5,5 @@ export { SiteShell } from "./SiteShell";
 export { WhatsAppFab } from "./WhatsAppFab";
 export { CookieConsent } from "./CookieConsent";
 export { SteveMobLogo, SteveDeskLogo } from "./SteveLogo";
-export { SteveMobLogo, SteveDeskLogo } from "./ProjetsLogo";
+export { ProjetsMobLogo, ProjetsDeskLogo, ProjetsLogo } from "./ProjetsLogo";
 export * from "./Layout";
