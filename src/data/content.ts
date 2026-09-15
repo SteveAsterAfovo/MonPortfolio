@@ -88,4 +88,4 @@ export const portfolioData = {
 };
 
 export type PortfolioData = typeof portfolioData;
-export const { stack, stackFooter, certifications, education, autodidact } = portfolioData;
+export const { stack, certifications, education, autodidact } = portfolioData;
