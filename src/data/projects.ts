@@ -53,6 +53,7 @@ export const projects: Project[] = [
   },
   {
     id: "suitops",
+    projectKey: "suitops",
     index: "02",
     category: "SAAS · BUSINESS SUITE",
     title: "SuitOps",
