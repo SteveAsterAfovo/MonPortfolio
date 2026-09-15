@@ -12,5 +12,3 @@ export const LINKS = {
 export const portfolioData = {
 
 };
-
-export type PortfolioData = typeof portfolioData;
