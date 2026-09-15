@@ -40,8 +40,5 @@ export const stacks = {
     },
   ] as StackCategory[],
 
-  footer:
-    "J'utilise l'IA comme multiplicateur de productivité, pas comme raccourci.",
-
-  autodidact: ["Architecture SaaS", "Sécurité OWASP", "DevOps", "IA appliquée"],
+  footer: "J'utilise l'IA comme multiplicateur de productivité, pas comme raccourci.",
 };
