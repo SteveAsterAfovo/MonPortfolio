@@ -1,5 +1,6 @@
 import { certifications, education } from "@/data/content";
 import { SectionTitle } from "@/components/site";
+import { profile } from "@/data";
 
 export function Credentials() {
   return (
