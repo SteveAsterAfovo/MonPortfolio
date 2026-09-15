@@ -1,6 +1,5 @@
 import { Stat } from "@/components/site";
-import { identity, profile, projects, knowledge } from "@/data";
-import { LINKS } from "@/data/content";
+import { identity, profile, projects, knowledge, LINKS } from "@/data";
 
 export function Hero() {
   return (
