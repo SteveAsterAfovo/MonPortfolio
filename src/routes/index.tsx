@@ -32,7 +32,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "Person",
           name: identity.name,
-          jobTitle: [identity.role, `Responsable des opérations - ${identity.company}`],
+          jobTitle: [identity.role, `${identity.poste} - ${identity.company}`],
           email: `mailto:${identity.email}`,
           telephone: identity.phone,
           url: `https://${identity.portfolio}`,
