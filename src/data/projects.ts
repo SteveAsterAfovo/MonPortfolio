@@ -20,6 +20,7 @@ export type Project = {
 };
 
 const CDN_BASE = "https://cdn.jsdelivr.net/gh";
+const PGS_LOGO_BASE = `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos`;
 
 export const projects = [
   {
@@ -67,8 +68,8 @@ export const projects = [
     ],
     stack: ["Nuxt.js", "Node.js", "Sails.js", "Tailwind", "PostgreSQL"],
     url: "https://suitops.netlify.app/",
-    logo: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/SuitOps-MC.png`,
-    logoDesk: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/SuitOps-DC.png`,
+    logo: `${CDN_BASE}/${PGS_LOGO_BASE}/SuitOps-MC.png`,
+    logoDesk: `${CDN_BASE}/${PGS_LOGO_BASE}/SuitOps-DC.png`,
     modules: [
       { icon: "👥", name: "Hire" },
       { icon: "🧾", name: "Facturation" },
