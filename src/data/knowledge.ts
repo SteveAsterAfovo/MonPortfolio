@@ -19,8 +19,8 @@ export const knowledge = {
     },
     {
       name: "Basic Information Literacy",
-      org: "The State University of New York",
-      date: "Août 2026"
+      org: "The State University of New York", date: "Août 2026",
+      url: "https://www.coursera.org/account/accomplishments/verify/H2K276QC507G",
     },
     {
       name: "Intelligence Artificielle pour tous",
