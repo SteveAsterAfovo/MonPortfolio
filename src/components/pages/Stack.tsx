@@ -1,4 +1,3 @@
-import { stackFooter } from "@/data/content";
 import { SectionTitle } from "@/components/site";
 import { stacks } from "@/data";
 
