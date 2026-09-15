@@ -68,8 +68,6 @@ export const projects: Project[] = [
     ],
     stack: ["Nuxt.js", "Node.js", "Sails.js", "Tailwind", "PostgreSQL"],
     url: "https://suitops.netlify.app/",
-    logo: `${PGS_LOGO_BASE}/SuitOps-MC.png`,
-    logoDesk: `${PGS_LOGO_BASE}/SuitOps-DC.png`,
     modules: [
       { icon: "👥", name: "Hire" },
       { icon: "🧾", name: "Facturation" },
