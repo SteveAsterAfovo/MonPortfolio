@@ -1,9 +1,3 @@
-export type Certification = {
-  name: string;
-  org: string;
-  date: string;
-};
-
 export const LINKS = {
   STAFPRINT: "https://stafprint.com/",
   WHATSAPP: "https://wa.me/2290166523639",
