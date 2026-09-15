@@ -25,6 +25,7 @@ export const portfolioData = {
     { name: "Prix Résidences du Numérique", org: "Labis Bénin", date: "Sept. 2021" },
     { name: "HTML5 + CSS", org: "OpenClassrooms", date: "Août 2023" },
   ] as Certification[],
+
   education: [
     { name: "Licence Pro Finance Contrôle & Audit", org: "UPAO", date: "2017" },
     { name: "Baccalauréat G2 Comptabilité", org: "LTC Porto-Novo", date: "2014" },
