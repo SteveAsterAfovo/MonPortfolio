@@ -52,7 +52,8 @@ export const knowledge = {
     },
     {
       name: "Glide Certification Level 1",
-      org: "Glide", date: "Émis le oct. 2023 · Expiré le oct. 2024"
+      org: "Glide", date: "Émis le oct. 2023 · Expiré le oct. 2024",
+      url: "https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/a7SBYQ5AlBCrp1XFM1Qb/pub/jxinSXPKsaqQF0pDcqvo/Glide%20Certification%20Level%201.pdf",
     },
     {
       name: "Alumni Fondation Tony Elumenu",
