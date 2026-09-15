@@ -1,4 +1,4 @@
-import { stack, stackFooter, stackIntro } from "@/data/content";
+import { stackFooter, stackIntro } from "@/data/content";
 import { SectionTitle } from "@/components/site";
 
 
