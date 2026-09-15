@@ -38,7 +38,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full border border-border bg-card px-7 py-3.5 font-medium transition-colors duration-300 hover:bg-secondary"
             >
-              Visiter STAF PRINT CENTER
+              Visiter {identity.company}
             </a>
           </div>
         </div>
