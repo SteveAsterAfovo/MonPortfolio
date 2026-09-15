@@ -20,13 +20,7 @@ export type Project = {
   partners?: string[];
   badge?: string;
   status?: "new" | "updated";
-  logo?: string;
-  logoDesk?: string;
 };
-
-const CDN_BASE = "https://cdn.jsdelivr.net/gh";
-const CYPASS_LOGO_BASE = `${CDN_BASE}/JustToHideMyPublicRepository/Files/Images/Logos`;
-const PGS_LOGO_BASE = `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos`;
 
 export const projects = [
   {
