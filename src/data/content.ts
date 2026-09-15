@@ -1,9 +1,3 @@
-export type StackCategory = {
-  label: string;
-  icon: string;
-  items: string[];
-};
-
 export type Project = {
   id: string;
   index: string;
