@@ -33,7 +33,6 @@ export function Projects() {
                 )}
               </div>
 
-              {/* Remplacement par le composant de logo dynamique */}
               <ProjetsDeskLogo
                 project={project.projectKey}
                 alt={`Logo du projet ${project.title}`}
