@@ -18,7 +18,7 @@ export function NotFoundComponent() {
           }}
         />
 
-        <div className="absolute left-1/2 top-1/2 size-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-[120px]" />
+        <div className="absolute left-1/2 top-1/2 size-100 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-[120px]" />
       </div>
 
       <section className="relative z-10 w-full max-w-3xl">
@@ -37,7 +37,7 @@ export function NotFoundComponent() {
               terminal
             </div>
 
-            <div className="w-[52px]" />
+            <div className="w-100" />
           </div>
 
           {/* Terminal */}
