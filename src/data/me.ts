@@ -26,4 +26,5 @@ export const profile = {
   ],
 
   softSkills: ["Rigueur", "Créativité", "Autonomie", "Leadership"],
+  autodidact: ["Architecture SaaS", "Sécurité OWASP", "DevOps", "IA appliquée"],
 };
