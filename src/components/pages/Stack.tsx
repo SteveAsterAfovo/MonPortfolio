@@ -26,7 +26,7 @@ export function Stack() {
           </div>
         ))}
       </div>
-      <p className="mt-8 font-mono text-sm text-primary">{stackFooter}</p>
+      <p className="mt-8 font-mono text-sm text-primary">{stacks.footer}</p>
     </section>
   );
 }
