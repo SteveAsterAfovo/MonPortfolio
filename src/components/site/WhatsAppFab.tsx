@@ -1,4 +1,4 @@
-import { LINKS } from "@/data/content";
+import { LINKS } from "@/data";
 
 export function WhatsAppFab() {
   return (
