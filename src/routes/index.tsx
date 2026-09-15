@@ -3,7 +3,7 @@ import { SiteShell } from "@/components/site";
 import { Hero, Projects, About, Stack, Credentials, Contact } from "@/components/pages";
 import { identity, stack } from "@/data/content";
 import { projects } from "@/data";
-import { URL } from "@/data/content";
+import { LINKS } from "@/data/content";
 
 const AUTHOR_NAME = "Steve Aster D. AFOVO";
 const SITE_NAME = `${AUTHOR_NAME} - Portfolio`;
@@ -39,11 +39,11 @@ export const Route = createFileRoute("/")({
           telephone: identity.phone,
           url: `https://${identity.portfolio}`,
           address: { "@type": "PostalAddress", addressLocality: "Abomey-Calavi", addressCountry: "BJ" },
-          sameAs: [`https://${identity.linkedin}`, `https://${identity.github}`, URL.STAFPRINT],
+          sameAs: [`https://${identity.linkedin}`, `https://${identity.github}`, LINKS.STAFPRINT],
           knowsAbout: stack.flatMap((c) => c.items),
           worksFor: [
             { "@type": "Organization", name: "Pro Gestion Soft" },
-            { "@type": "Organization", name: "STAF PRINT CENTER", url: URL.STAFPRINT },
+            { "@type": "Organization", name: "STAF PRINT CENTER", url: LINKS.STAFPRINT },
           ],
         }),
       },
