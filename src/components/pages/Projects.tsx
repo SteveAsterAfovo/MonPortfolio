@@ -32,16 +32,13 @@ export function Projects() {
                   <p className="mt-1.5 text-sm text-muted-foreground">{project.subtitle}</p>
                 )}
               </div>
-              {project.logoDesk || project.logo ? (
-                <img
-                  src={project.logoDesk ?? project.logo}
-                  alt={`Logo du projet ${project.title}`}
-                  loading="lazy"
-                  className="h-7 w-auto max-w-22.5 shrink-0 object-contain opacity-80 transition-opacity duration-300 group-hover:opacity-100 sm:h-8 sm:max-w-30"
-                />
-              ) : (
-                <span className="font-mono text-xs text-muted-foreground">{project.index}</span>
-              )}
+
+              {/* Remplacement par le composant de logo dynamique */}
+              <ProjetsDeskLogo
+                project={project.projectKey}
+                alt={`Logo du projet ${project.title}`}
+                className="h-7 w-auto max-w-22.5 shrink-0 opacity-80 transition-opacity duration-300 group-hover:opacity-100 sm:h-8 sm:max-w-30"
+              />
             </div>
 
             <div className="mt-6 overflow-hidden rounded-xl border border-border bg-secondary">
