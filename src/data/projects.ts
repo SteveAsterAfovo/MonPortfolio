@@ -139,10 +139,8 @@ export const projects = [
     category: "ENTREPRISE · LANDING PAGE · CORPORATE",
     title: "Pro Gestion Soft",
     role: "Co-Fondateur & Responsable R&D",
-    short:
-      "Identité digitale et vitrine corporate de l'éditeur SaaS Pro Gestion Soft.",
-    long:
-      "Site corporate de Pro Gestion Soft - éditeur de solutions de gestion pour le marché ouest-africain. Pensé comme une vitrine premium, performant, SEO-ready.",
+    short: "Identité digitale et vitrine corporate de l'éditeur SaaS Pro Gestion Soft.",
+    long: "Site corporate de Pro Gestion Soft - éditeur de solutions de gestion pour le marché ouest-africain. Pensé comme une vitrine premium, performant, SEO-ready.",
     features: [
       "Performance Lighthouse > 95",
       "SEO multi-pages",
@@ -161,10 +159,8 @@ export const projects = [
     category: "DOCUMENTATION TECHNIQUE",
     title: "PGS Docs",
     role: "Concepteur & Rédacteur Technique",
-    short:
-      "Hub de documentation technique pour l'écosystème Pro Gestion Soft.",
-    long:
-      "PGS Docs centralise la documentation produit, technique et API de l'écosystème PGS. Navigation rapide, recherche, exemples de code interactifs.",
+    short: "Hub de documentation technique pour l'écosystème Pro Gestion Soft.",
+    long: "PGS Docs centralise la documentation produit, technique et API de l'écosystème PGS. Navigation rapide, recherche, exemples de code interactifs.",
     features: [
       "Recherche full-text instantanée",
       "Exemples de code copiables",
