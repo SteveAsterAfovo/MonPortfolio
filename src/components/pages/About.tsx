@@ -1,6 +1,5 @@
-import { identity, profile } from "@/data/content";
 import { SectionTitle } from "@/components/site";
-
+import { identity, profile } from "@/data";
 
 export function About() {
   return (
