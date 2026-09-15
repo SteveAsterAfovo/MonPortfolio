@@ -20,4 +20,3 @@ export const education = [
 };
 
 
-export type PortfolioData = typeof portfolioData;
