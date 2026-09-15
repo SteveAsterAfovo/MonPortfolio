@@ -1,9 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteShell } from "@/components/site";
 import { Hero, Projects, About, Stack, Credentials, Contact } from "@/components/pages";
-import { stack } from "@/data/content";
+import { stack, LINKS } from "@/data/content";
 import { identity, projects } from "@/data";
-import { LINKS } from "@/data/content";
 
 const AUTHOR_NAME = "Steve Aster D. AFOVO";
 const SITE_NAME = `${AUTHOR_NAME} - Portfolio`;
