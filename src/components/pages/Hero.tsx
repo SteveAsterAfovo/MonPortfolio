@@ -1,7 +1,7 @@
 import { certifications, identity, profile } from "@/data/content";
 import { projects } from "@/data";
 import { Stat } from "@/components/site";
-import { URL } from "@/data/content";
+import { LINKS } from "@/data/content";
 
 export function Hero() {
   return (
@@ -35,7 +35,7 @@ export function Hero() {
               <span className="transition-transform duration-300 group-hover:translate-y-0.5">↓</span>
             </a>
             <a
-              href={URL.STAFPRINT}
+              href={LINKS.STAFPRINT}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full border border-border bg-card px-7 py-3.5 font-medium transition-colors duration-300 hover:bg-secondary"
