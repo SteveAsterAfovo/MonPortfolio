@@ -31,7 +31,7 @@ export function Credentials() {
           <div className="card-flat rounded-2xl p-5 sm:p-8">
             <h3 className="font-mono text-[10px] uppercase tracking-[0.24em] text-primary">Formation</h3>
             <ul className="mt-6 space-y-4">
-              {education.map((e) => (
+              {knowledge.education.map((e) => (
                 <li key={e.name}>
                   <div className="text-sm font-medium">{e.name}</div>
                   <div className="text-xs text-muted-foreground">
