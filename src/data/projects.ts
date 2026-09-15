@@ -96,7 +96,7 @@ export const projects = [
     stack: ["Nuxt.js", "Sails.js", "Node.js", "Tailwind", "PostgreSQL"],
     url: "https://hire-suitops.netlify.app/",
     logo: `${PGS_LOGO_BASE}/Hire-MC.png`,
-    logoDesk: `${PGS_LOGO_BASE}/Hire-MC.png`,
+    logoDesk: `${PGS_LOGO_BASE}/Hire-DC.png`,
   },
   {
     id: "eqt",
