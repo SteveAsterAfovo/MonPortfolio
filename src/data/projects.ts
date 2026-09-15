@@ -4,6 +4,7 @@ export type ProjectKey = keyof typeof logos.projets;
 
 export type Project = {
   id: string;
+  projectKey: ProjectKey;
   index: string;
   category: string;
   title: string;
