@@ -1,5 +1,5 @@
 import { identity } from "@/data/content";
-import { URL } from "@/data/content";
+import { LINKS } from "@/data/content";
 
 export function Contact() {
   return (
@@ -35,7 +35,7 @@ export function Contact() {
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
             </a>
             <a
-              href={URL.WHATSAPP}
+              href={LINKS.WHATSAPP}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex w-full items-center justify-center rounded-full border border-background/35 px-7 py-3.5 font-medium transition-colors duration-300 hover:bg-background/10 sm:w-auto"
