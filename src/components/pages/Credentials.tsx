@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ExternalLink } from "lucide-react";
 import { SectionTitle } from "@/components/site";
 import { profile, knowledge } from "@/data";
 
