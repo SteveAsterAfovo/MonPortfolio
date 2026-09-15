@@ -113,7 +113,7 @@ export const projects = [
     stack: ["React", "Node.js", "MongoDB", "Chart.js"],
     url: "https://eqt.netlify.app/",
     logo: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/EQT-MC.png`,
-    logoDesk: "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/EQT-DC.png",
+    logoDesk: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/EQT-DC.png`,
   },
   {
     id: "axiom",
@@ -132,7 +132,7 @@ export const projects = [
     stack: ["TypeScript", "Vue", "React", "Vite"],
     url: "https://pgs-axiom.netlify.app/",
     logo: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/AXIOM-MC.png`,
-    logoDesk: "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/AXIOM-DC.png",
+    logoDesk: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/AXIOM-DC.png`,
     extras: ["Disponible sur NPM : @progestionsoft/axiom"],
   },
   {
@@ -153,7 +153,7 @@ export const projects = [
     url: "https://progestionsoft.netlify.app/",
     badge: "🏆 Lauréate - Résidence du Numérique, Labis Bénin 2021",
     logo: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/PGS-MC.png`,
-    logoDesk: "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/PGS-DC.png",
+    logoDesk: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/PGS-DC.png`,
   },
   {
     id: "pgsdocs",
@@ -172,6 +172,6 @@ export const projects = [
     stack: ["VitePress", "Markdown", "TypeScript"],
     url: "https://pgsdocs.netlify.app/",
     logo: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/PGSDocs-MC.png`,
-    logoDesk: "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/PGSDocs-DC.png",
+    logoDesk: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/PGSDocs-DC.png`,
   },
 ] as Project[];
