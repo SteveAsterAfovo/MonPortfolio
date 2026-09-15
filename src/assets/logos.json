@@ -42,10 +42,10 @@
       "dw": "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/PGS-DW.png"
     },
     "pgsdocs": {
-      "mc": "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/SuitOps-MC.png",
-      "mw": "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/SuitOps-MW.png",
-      "dc": "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/SuitOps-DC.png",
-      "dw": "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/SuitOps-DW.png"
+      "mc": "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/PGSDocs-MC.png",
+      "mw": "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/PGSDocs-MW.png",
+      "dc": "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/PGSDocs-DC.png",
+      "dw": "https://cdn.jsdelivr.net/gh/progestionsoft/Files/_General/Images/Logos/PGSDocs-DW.png"
     }
   }
 }
