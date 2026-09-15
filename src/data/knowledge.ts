@@ -4,7 +4,7 @@ export type Certification = {
   date: string;
 };
 
-export const portfolioData = {
+export const certifications = {
   certifications: [
     { name: "AWS Academy - Cloud Foundation", org: "Amazon Web Services", date: "Mars 2026" },
     { name: "Prompt Design in Vertex AI", org: "Google Cloud", date: "Juin 2024" },
