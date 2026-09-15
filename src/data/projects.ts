@@ -68,8 +68,8 @@ export const projects = [
     ],
     stack: ["Nuxt.js", "Node.js", "Sails.js", "Tailwind", "PostgreSQL"],
     url: "https://suitops.netlify.app/",
-    logo: `${CDN_BASE}/${PGS_LOGO_BASE}/SuitOps-MC.png`,
-    logoDesk: `${CDN_BASE}/${PGS_LOGO_BASE}/SuitOps-DC.png`,
+    logo: `${PGS_LOGO_BASE}/SuitOps-MC.png`,
+    logoDesk: `${PGS_LOGO_BASE}/SuitOps-DC.png`,
     modules: [
       { icon: "👥", name: "Hire" },
       { icon: "🧾", name: "Facturation" },
@@ -94,8 +94,8 @@ export const projects = [
     ],
     stack: ["Nuxt.js", "Sails.js", "Node.js", "Tailwind", "PostgreSQL"],
     url: "https://hire-suitops.netlify.app/",
-    logo: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/Hire-MC.png`,
-    logoDesk: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/Hire-MC.png`,
+    logo: `${CDN_BASE}/${PGS_LOGO_BASE}/Hire-MC.png`,
+    logoDesk: `${CDN_BASE}/${PGS_LOGO_BASE}/Hire-MC.png`,
   },
   {
     id: "eqt",
@@ -113,7 +113,7 @@ export const projects = [
     ],
     stack: ["React", "Node.js", "MongoDB", "Chart.js"],
     url: "https://eqt.netlify.app/",
-    logo: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/EQT-MC.png`,
+    logo: `${CDN_BASE}/${PGS_LOGO_BASE}/EQT-MC.png`,
     logoDesk: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/EQT-DC.png`,
   },
   {
@@ -132,8 +132,8 @@ export const projects = [
     ],
     stack: ["TypeScript", "Vue", "React", "Vite"],
     url: "https://pgs-axiom.netlify.app/",
-    logo: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/AXIOM-MC.png`,
-    logoDesk: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/AXIOM-DC.png`,
+    logo: `${PGS_LOGO_BASE}/AXIOM-MC.png`,
+    logoDesk: `${PGS_LOGO_BASE}/AXIOM-DC.png`,
     extras: ["Disponible sur NPM : @progestionsoft/axiom"],
   },
   {
@@ -153,8 +153,8 @@ export const projects = [
     stack: ["Nuxt.js", "Tailwind", "Netlify"],
     url: "https://progestionsoft.netlify.app/",
     badge: "🏆 Lauréate - Résidence du Numérique, Labis Bénin 2021",
-    logo: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/PGS-MC.png`,
-    logoDesk: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/PGS-DC.png`,
+    logo: `${PGS_LOGO_BASE}/PGS-MC.png`,
+    logoDesk: `${PGS_LOGO_BASE}/PGS-DC.png`,
   },
   {
     id: "pgsdocs",
@@ -172,7 +172,7 @@ export const projects = [
     ],
     stack: ["VitePress", "Markdown", "TypeScript"],
     url: "https://pgsdocs.netlify.app/",
-    logo: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/PGSDocs-MC.png`,
-    logoDesk: `${CDN_BASE}/progestionsoft/Files/_General/Images/Logos/PGSDocs-DC.png`,
+    logo: `${PGS_LOGO_BASE}/PGSDocs-MC.png`,
+    logoDesk: `${PGS_LOGO_BASE}/PGSDocs-DC.png`,
   },
 ] as Project[];
