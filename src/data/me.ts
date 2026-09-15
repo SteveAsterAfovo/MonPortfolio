@@ -9,7 +9,6 @@ export const identity = {
   github: "github.com/SteveAsterAfovo",
   portfolio: "steveasterafovo.netlify.app",
   company: "stafprint.com",
-  year: "2026",
 };
 
 export const profile = {
