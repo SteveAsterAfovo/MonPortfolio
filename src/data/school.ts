@@ -4,11 +4,6 @@ export type Certification = {
   date: string;
 };
 
-export const URL = {
-  STAFPRINT: "https://stafprint.com/",
-  WHATSAPP: "https://wa.me/2290166523639",
-};
-
 export const portfolioData = {
   certifications: [
     { name: "AWS Academy - Cloud Foundation", org: "Amazon Web Services", date: "Mars 2026" },
