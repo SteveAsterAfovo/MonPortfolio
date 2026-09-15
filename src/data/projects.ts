@@ -111,8 +111,6 @@ export const projects: Project[] = [
     ],
     stack: ["React", "Node.js", "MongoDB", "Chart.js"],
     url: "https://eqt.netlify.app/",
-    logo: `${PGS_LOGO_BASE}/EQT-MC.png`,
-    logoDesk: `${PGS_LOGO_BASE}/EQT-DC.png`,
   },
   {
     id: "axiom",
