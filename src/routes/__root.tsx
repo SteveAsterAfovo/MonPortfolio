@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               },
               worksFor: {
                 "@type": "Organization",
-                name: "STAF PRINT CENTER",
+                name: identity.company,
                 url: LINKS.STAFPRINT
               }
             }
