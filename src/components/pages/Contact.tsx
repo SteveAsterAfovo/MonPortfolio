@@ -1,5 +1,4 @@
-import { identity } from "@/data";
-import { LINKS } from "@/data/content";
+import { identity, LINKS } from "@/data";
 
 export function Contact() {
   return (
