@@ -18,4 +18,3 @@ export const education = [
   { name: "Baccalauréat G2 Comptabilité", org: "LTC Porto-Novo", date: "2014" },
 ],
 };
-
