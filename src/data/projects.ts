@@ -133,6 +133,7 @@ export const projects: Project[] = [
   },
   {
     id: "pgs",
+    projectKey: "progestionsoft",
     index: "06",
     category: "ENTREPRISE · LANDING PAGE · CORPORATE",
     title: "Pro Gestion Soft",
