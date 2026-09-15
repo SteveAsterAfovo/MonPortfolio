@@ -96,6 +96,7 @@ export const projects: Project[] = [
   },
   {
     id: "eqt",
+    projectKey: "easyquicktrack",
     index: "04",
     category: "WEB APP · SEO & ANALYTICS",
     title: "EasyQuickTrack",
