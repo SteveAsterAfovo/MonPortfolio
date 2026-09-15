@@ -1,5 +1,4 @@
-import { SectionTitle, screenshotUrl } from "@/components/site";
-import { ProjetsDeskLogo } from "@/components/site";
+import { SectionTitle, ProjetsDeskLogo, screenshotUrl } from "@/components/site";
 import { projects } from "@/data/projects";
 
 export function Projects() {
