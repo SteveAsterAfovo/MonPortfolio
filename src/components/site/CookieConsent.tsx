@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Cookie } from "lucide-react";
-import { LINKS } from "@/data/content";
+import { LINKS } from "@/data";
 
 const STAFPRINT_BASE = LINKS.STAFPRINT.replace(/\/+$/, "");
 
