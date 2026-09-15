@@ -27,7 +27,7 @@ export const knowledge = {
       org: "FORCE-N & ADPM Bénin", date: "Août 2026"
     },
     {
-      name: "Certificate of completion: Claude 101",
+      name: "Claude 101",
       org: "Anthropic", date: "Juil. 2026",
       url: "https://anthropic.com/verify/example-claude"
     },
