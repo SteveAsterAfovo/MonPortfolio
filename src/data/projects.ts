@@ -1,3 +1,7 @@
+import logos from "@/assets/logos.json";
+
+export type ProjectKey = keyof typeof logos.projets;
+
 export type Project = {
   id: string;
   index: string;
