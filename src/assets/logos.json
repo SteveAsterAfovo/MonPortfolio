@@ -3,5 +3,49 @@
   "mw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/SteveAsterAfovo-MW.png",
   "dc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/SteveAsterAfovo-DC.png",
   "dw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/SteveAsterAfovo-DW.png",
-  "meta": "https://cdn.jsdelivr.net/gh/stafprintcenter/Files/Images/Other/meta.avif"
+  "meta": "https://cdn.jsdelivr.net/gh/stafprintcenter/Files/Images/Other/meta.avif",
+  "projets": {
+    "cypass": {
+      "mc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/Cypass-MC.png",
+      "dc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/Cypass-DC.png",
+      "mw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/Cypass-MW.png",
+      "dw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/Cypass-DW.png"
+    },
+    "suitops": {
+      "mc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/SuitOps-MC.png",
+      "dc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/SuitOps-DC.png",
+      "mw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/SuitOps-MW.png",
+      "dw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/SuitOps-DW.png"
+    },
+    "hire": {
+      "mc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/Hire-MC.png",
+      "dc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/Hire-DC.png",
+      "mw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/Hire-MW.png",
+      "dw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/Hire-DW.png"
+    },
+    "easyquicktrack": {
+      "mc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/EasyQuickTrack-MC.png",
+      "dc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/EasyQuickTrack-DC.png",
+      "mw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/EasyQuickTrack-MW.png",
+      "dw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/EasyQuickTrack-DW.png"
+    },
+    "axiom": {
+      "mc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/AXIOM-MC.png",
+      "dc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/AXIOM-DC.png",
+      "mw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/AXIOM-MW.png",
+      "dw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/AXIOM-DW.png"
+    },
+    "progestionsoft": {
+      "mc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/ProGestionSoft-MC.png",
+      "dc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/ProGestionSoft-DC.png",
+      "mw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/ProGestionSoft-MW.png",
+      "dw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/ProGestionSoft-DW.png"
+    },
+    "pgsdocs": {
+      "mc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/PGSDocs-MC.png",
+      "dc": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/PGSDocs-DC.png",
+      "mw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/PGSDocs-MW.png",
+      "dw": "https://cdn.jsdelivr.net/gh/steveasterafovo/Files/Images/Logos/Projets/PGSDocs-DW.png"
+    }
+  }
 }
