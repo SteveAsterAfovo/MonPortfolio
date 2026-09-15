@@ -32,30 +32,43 @@ export function Credentials() {
               </div>
 
               <ul className="mt-6 divide-y divide-border">
-                {paginatedCertifications.map((c) => (
-                  <li key={c.name} className="flex items-baseline justify-between gap-4 py-3.5">
-                    <div className="min-w-0">
-                      <div className="flex items-center gap-2">
-                        <span className="text-sm font-medium">{c.name}</span>
-                        {c.url && (
-                          <a
-                            href={c.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center text-xs text-primary hover:underline"
-                            title="Vérifier le certificat"
-                          >
-                            ↗
-                          </a>
-                        )}
-                      </div>
-                      <div className="text-xs text-muted-foreground">{c.org}</div>
-                    </div>
-                    <span className="shrink-0 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                      {c.date}
-                    </span>
-                  </li>
-                ))}
+                {paginatedCertifications.map((c) => {
+                  const Component = c.url ? "a" : "div";
+                  const linkProps = c.url
+                    ? {
+                      href: c.url,
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                    }
+                    : {};
+
+                  return (
+                    <li key={c.name}>
+                      <Component
+                        {...linkProps}
+                        className={`group flex items-center justify-between gap-4 py-3.5 px-2 -mx-2 rounded-xl transition-colors ${c.url
+                          ? "cursor-pointer hover:bg-secondary/60"
+                          : "cursor-default"
+                          }`}
+                      >
+                        <div className="min-w-0 flex-1">
+                          <div className="flex items-center gap-2">
+                            <span className={`text-sm font-medium ${c.url ? "group-hover:text-primary transition-colors" : ""}`}>
+                              {c.name}
+                            </span>
+                            {c.url && (
+                              <ExternalLink className="h-3.5 w-3.5 shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
+                            )}
+                          </div>
+                          <div className="text-xs text-muted-foreground">{c.org}</div>
+                        </div>
+                        <span className="shrink-0 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                          {c.date}
+                        </span>
+                      </Component>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
 
@@ -65,7 +78,7 @@ export function Credentials() {
                 <button
                   onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
                   disabled={currentPage === 1}
-                  className="rounded-lg border border-border px-3 py-1.5 text-xs font-medium transition-colors hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-40"
+                  className="rounded-lg border border-border px-3 py-1.5 text-xs font-medium transition-colors hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-40 cursor-pointer"
                 >
                   ← Précédent
                 </button>
@@ -76,7 +89,7 @@ export function Credentials() {
                       onClick={() => setCurrentPage(page)}
                       className={`h-7 w-7 rounded-lg text-xs font-mono transition-colors ${currentPage === page
                         ? "bg-primary text-primary-foreground"
-                        : "border border-border hover:bg-secondary"
+                        : "border border-border hover:bg-secondary cursor-pointer"
                         }`}
                     >
                       {page}
@@ -86,7 +99,7 @@ export function Credentials() {
                 <button
                   onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
                   disabled={currentPage === totalPages}
-                  className="rounded-lg border border-border px-3 py-1.5 text-xs font-medium transition-colors hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-40"
+                  className="rounded-lg border border-border px-3 py-1.5 text-xs font-medium transition-colors hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-40 cursor-pointer"
                 >
                   Suivant →
                 </button>
