@@ -14,4 +14,3 @@ export const portfolioData = {
 };
 
 export type PortfolioData = typeof portfolioData;
-export const { certifications, education } = portfolioData;
