@@ -25,6 +25,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "cypass",
+    projectKey: "cypass",
     index: "01",
     category: "SAAS · CYBERSÉCURITÉ",
     title: "CYPASS",
