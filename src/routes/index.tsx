@@ -41,7 +41,7 @@ export const Route = createFileRoute("/")({
           knowsAbout: stacks.detail.flatMap((c) => c.items),
           worksFor: [
             { "@type": "Organization", name: "Pro Gestion Soft" },
-            { "@type": "Organization", name: "STAF PRINT CENTER", url: LINKS.STAFPRINT },
+            { "@type": "Organization", name: identity.company, url: LINKS.STAFPRINT },
           ],
         }),
       },
