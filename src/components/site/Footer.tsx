@@ -1,5 +1,5 @@
-import { identity } from "@/data/content";
 import { SteveDeskLogo } from "@/components/site";
+import { identity } from "@/data";
 import { LINKS } from "@/data/content";
 
 export function Footer() {
