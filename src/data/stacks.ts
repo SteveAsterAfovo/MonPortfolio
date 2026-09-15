@@ -7,7 +7,7 @@ export type StackCategory = {
 export const stacks = {
   intro: "Une stack moderne, choisie pour la productivité et la fiabilité - du front pixel-perfect au back robuste, avec l'IA comme accélérateur.",
 
-  stack: [
+  detail: [
     {
       label: "Frontend",
       icon: "Monitor",
