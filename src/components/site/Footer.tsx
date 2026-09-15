@@ -12,7 +12,7 @@ export function Footer() {
         {/* Informations */}
         <div className="flex flex-col items-center gap-1 text-center md:items-start md:text-left">
           <span className="font-mono text-[10px] uppercase tracking-[0.18em]">
-            {identity.location} - © {identity.year}
+            {identity.location} - © {new Date().getFullYear()}
           </span>
         </div>
 
