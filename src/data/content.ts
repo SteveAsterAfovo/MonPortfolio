@@ -39,7 +39,6 @@ export const LINKS = {
 };
 
 export const portfolioData = {
-  stackIntro: "Une stack moderne, choisie pour la productivité et la fiabilité - du front pixel-perfect au back robuste, avec l'IA comme accélérateur.",
   stack: [
     {
       label: "Frontend",
