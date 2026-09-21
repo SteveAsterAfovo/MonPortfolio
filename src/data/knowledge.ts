@@ -8,6 +8,11 @@ export type Certification = {
 export const knowledge = {
   certifications: [
     {
+      name: "IoT (Internet of Things) Wireless & Cloud Computing Emerging Technologies",
+      org: "Yonsei Universit", date: "Sept. 2026",
+      url: "https://www.coursera.org/account/accomplishments/verify/4M0E64O5HSTT",
+    },
+    {
       name: "Excel Fundamentals for Data Analysis",
       org: "Macquarie University", date: "Sept. 2026",
       url: "https://www.coursera.org/account/accomplishments/verify/SVYT5RBCZDDD",
