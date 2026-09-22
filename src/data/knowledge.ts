@@ -10,7 +10,7 @@ export const knowledge = {
     {
       name: "Deloitte Australia - Technology  Job Simulation",
       org: "Forage", date: "Sept. 2026",
-      url: "https://www.coursera.org/account/accomplishments/verify/4M0E64O5HSTT",
+      url: "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_6ab192268b93e7892a48b437_1790084254005_completion_certificate.pdf",
     },
     {
       name: "IoT (Internet of Things) Wireless & Cloud Computing Emerging Technologies",
