@@ -34,7 +34,7 @@ export const knowledge = {
     },
     {
       name: "Intelligence Artificielle pour tous",
-      org: "FORCE-N & ADPM Bénin", date: "Août 2026"
+      org: "FORCE-N & ADPME Bénin", date: "Août 2026"
     },
     {
       name: "Claude 101",
