@@ -9,7 +9,7 @@ export const knowledge = {
   certifications: [
     {
       name: "Deloitte Australia - Technology  Job Simulation",
-      org: "Yonsei University", date: "Sept. 2026",
+      org: "Forage", date: "Sept. 2026",
       url: "https://www.coursera.org/account/accomplishments/verify/4M0E64O5HSTT",
     },
     {
