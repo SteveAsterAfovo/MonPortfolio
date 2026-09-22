@@ -3,7 +3,7 @@ import { ExternalLink } from "lucide-react";
 import { SectionTitle } from "@/components/site";
 import { profile, knowledge } from "@/data";
 
-const ITEMS_PER_PAGE = 4;
+const ITEMS_PER_PAGE = 5;
 
 export function Credentials() {
   const [currentPage, setCurrentPage] = useState(1);
