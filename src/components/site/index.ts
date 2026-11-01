@@ -4,6 +4,7 @@ export { Footer } from "./Footer";
 export { SiteShell } from "./SiteShell";
 export { WhatsAppFab } from "./WhatsAppFab";
 export { CookieConsent } from "./CookieConsent";
+export { DocumentPreview } from "./DocumentPreview";
 export { SteveMobLogo, SteveDeskLogo } from "./SteveLogo";
 export { ProjetsMobLogo, ProjetsDeskLogo, ProjetsLogo } from "./ProjetsLogo";
 export * from "./Layout";
