@@ -74,7 +74,7 @@ function DocCard({ doc, featured = false }: { doc: Doc; featured?: boolean }) {
   return (
     <article
       ref={ref}
-      className="card-flat card-hover flex min-w-0 flex-col rounded-2xl p-6 sm:p-8"
+      className="card-flat flex min-w-0 flex-col rounded-2xl p-6 sm:p-8"
     >
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0">
@@ -99,7 +99,7 @@ function DocCard({ doc, featured = false }: { doc: Doc; featured?: boolean }) {
           type="button"
           onClick={handleDownload}
           aria-busy={status === "loading"}
-          className={`group inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-300 ${featured
+          className={`group inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-300 cursor-pointer ${featured
             ? "bg-primary text-primary-foreground hover:opacity-90"
             : "border border-border bg-secondary text-foreground hover:bg-accent"
             }`}
