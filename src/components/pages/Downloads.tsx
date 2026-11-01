@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import { SectionTitle } from "../site";
+import { SectionTitle, DocumentPreview } from "../site";
 import { DOCS } from "@/data";
 import { deliverFile, formatBytes } from "@/lib/download";
+import { Button } from "@/components/ui/button";
 
 type Doc = (typeof DOCS)[number];
 type Status = "loading" | "ready" | "error";
@@ -95,7 +96,7 @@ function DocCard({ doc, featured = false }: { doc: Doc; featured?: boolean }) {
       </p>
 
       <div className="mt-5 flex flex-wrap items-center gap-4">
-        <button
+        <Button
           type="button"
           onClick={handleDownload}
           aria-busy={status === "loading"}
@@ -118,15 +119,13 @@ function DocCard({ doc, featured = false }: { doc: Doc; featured?: boolean }) {
               ↓
             </span>
           )}
-        </button>
-        <a
-          href={doc.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm text-muted-foreground underline decoration-border underline-offset-4 transition-colors duration-300 hover:text-primary"
-        >
-          Aperçu
-        </a>
+        </Button>
+        <DocumentPreview
+          url={doc.url}
+          title={doc.title}
+          pages={doc.pages}
+          onDownload={handleDownload}
+        />
       </div>
     </article>
   );
