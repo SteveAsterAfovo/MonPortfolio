@@ -3,6 +3,7 @@ export const NAV = [
   { href: "#a-propos", label: "À propos" },
   { href: "#stack", label: "Stack" },
   { href: "#parcours", label: "Parcours" },
+  { href: "#documents", label: "Documents" },
 ];
 
 export function SectionTitle({ tag, title }: { tag: string; title: string }) {
