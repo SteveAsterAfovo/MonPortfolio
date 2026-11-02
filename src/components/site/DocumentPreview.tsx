@@ -12,7 +12,7 @@ import {
 type DocumentPreviewProps = {
   url: string;
   title: string;
-  pages: number;
+  pages?: number | null;
   onDownload: () => void;
 };
 
@@ -112,7 +112,9 @@ export function DocumentPreview({ url, title, pages, onDownload }: DocumentPrevi
         <header className="flex shrink-0 flex-wrap items-center justify-between gap-3 border-b border-border px-4 py-4 pr-12 sm:px-6 sm:pr-14">
           <div className="min-w-0">
             <DialogTitle className="font-display tracking-normal">{title}</DialogTitle>
-            <DialogDescription className="mt-1">PDF · {pages} pages</DialogDescription>
+            <DialogDescription className="mt-1">
+              PDF{pages ? ` · ${pages} pages` : ""}
+            </DialogDescription>
           </div>
           <Button variant="outline" size="sm" onClick={onDownload}>
             <Download /> Télécharger

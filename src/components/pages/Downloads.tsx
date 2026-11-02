@@ -13,6 +13,7 @@ function usePreloadedDoc(url: string) {
   const blobRef = useRef<Blob | null>(null);
   const [status, setStatus] = useState<Status>("loading");
   const [size, setSize] = useState(0);
+  const [pages, setPages] = useState<number | null>(null);
 
   useEffect(() => {
     const el = ref.current;
@@ -29,11 +30,25 @@ function usePreloadedDoc(url: string) {
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             return response.blob();
           })
-          .then((blob) => {
+          .then(async (blob) => {
             if (cancelled) return;
             blobRef.current = blob;
             setSize(blob.size);
             setStatus("ready");
+            // Nombre de pages lu directement dans le PDF préchargé.
+            try {
+              const [pdfjs, worker] = await Promise.all([
+                import("pdfjs-dist/legacy/build/pdf.mjs"),
+                import("pdfjs-dist/legacy/build/pdf.worker.min.mjs?url"),
+              ]);
+              pdfjs.GlobalWorkerOptions.workerSrc = worker.default;
+              const task = pdfjs.getDocument({ data: await blob.arrayBuffer() });
+              const pdf = await task.promise;
+              if (!cancelled) setPages(pdf.numPages);
+              void task.destroy();
+            } catch {
+              // Comptage impossible : on affiche juste la taille du fichier.
+            }
           })
           .catch(() => {
             if (!cancelled) setStatus("error");
@@ -49,11 +64,11 @@ function usePreloadedDoc(url: string) {
     };
   }, [url]);
 
-  return { ref, blobRef, status, size };
+  return { ref, blobRef, status, size, pages };
 }
 
 function DocCard({ doc, featured = false }: { doc: Doc; featured?: boolean }) {
-  const { ref, blobRef, status, size } = usePreloadedDoc(doc.url);
+  const { ref, blobRef, status, size, pages } = usePreloadedDoc(doc.url);
 
   const handleDownload = () => {
     const blob = blobRef.current;
@@ -67,7 +82,7 @@ function DocCard({ doc, featured = false }: { doc: Doc; featured?: boolean }) {
 
   const meta =
     status === "ready" && size
-      ? `PDF · ${doc.pages} pages · ${formatBytes(size)}`
+      ? `PDF${pages ? ` · ${pages} pages` : ""} · ${formatBytes(size)}`
       : status === "error"
         ? "Ouverture dans un onglet"
         : "Préparation du fichier…";
@@ -75,7 +90,7 @@ function DocCard({ doc, featured = false }: { doc: Doc; featured?: boolean }) {
   return (
     <article
       ref={ref}
-      className="card-flat flex min-w-0 flex-col rounded-2xl p-6 sm:p-8"
+      className="card-flat card-hover flex min-w-0 flex-col rounded-2xl p-6 sm:p-8"
     >
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0">
@@ -100,7 +115,7 @@ function DocCard({ doc, featured = false }: { doc: Doc; featured?: boolean }) {
           type="button"
           onClick={handleDownload}
           aria-busy={status === "loading"}
-          className={`group inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-300 cursor-pointer ${featured
+          className={`group inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-300 ${featured
             ? "bg-primary text-primary-foreground hover:opacity-90"
             : "border border-border bg-secondary text-foreground hover:bg-accent"
             }`}
@@ -120,12 +135,7 @@ function DocCard({ doc, featured = false }: { doc: Doc; featured?: boolean }) {
             </span>
           )}
         </Button>
-        <DocumentPreview
-          url={doc.url}
-          title={doc.title}
-          pages={doc.pages}
-          onDownload={handleDownload}
-        />
+        <DocumentPreview url={doc.url} title={doc.title} pages={pages} onDownload={handleDownload} />
       </div>
     </article>
   );
