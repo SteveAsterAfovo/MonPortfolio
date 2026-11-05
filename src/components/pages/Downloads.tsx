@@ -141,7 +141,7 @@ function DocCard({ doc, featured = false }: { doc: Doc; featured?: boolean }) {
   );
 }
 
-export function Downloads() {
+export function DownloadsSection() {
   return (
     <section id="documents" className="border-b border-border py-14 sm:py-24">
       <div className="mb-10 flex items-end justify-between gap-6 sm:mb-12">
