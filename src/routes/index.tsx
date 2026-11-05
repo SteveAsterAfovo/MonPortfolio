@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteShell } from "@/components/site";
 import { Hero, Projects, About, Stack, Credentials, Contact, Downloads } from "@/components/pages";
-import { identity, projects, stacks, LINKS } from "@/data";
+import { identity, PROJECTS, stacks, LINKS } from "@/data";
 
 const AUTHOR_NAME = "Steve Aster D. AFOVO";
 const SITE_NAME = `${AUTHOR_NAME} - Portfolio`;
@@ -51,7 +51,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "ItemList",
           name: SITE_NAME,
-          itemListElement: projects.map((p, i) => ({
+          itemListElement: PROJECTS.map((p, i) => ({
             "@type": "ListItem",
             position: i + 1,
             name: p.title,

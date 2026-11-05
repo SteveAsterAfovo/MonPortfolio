@@ -1,5 +1,5 @@
 import { SectionTitle, ProjetsLogo, screenshotUrl } from "@/components/site";
-import { projects } from "@/data";
+import { PROJECTS } from "@/data";
 import { EcosystemCard } from "./Ecosystem";
 
 export function Projects() {
@@ -10,12 +10,12 @@ export function Projects() {
           <SectionTitle tag="Sélection" title="Projets en production" />
         </div>
         <span className="hidden shrink-0 font-mono text-xs uppercase tracking-[0.22em] text-muted-foreground sm:block">
-          01 - {String(projects.length).padStart(2, "0")}
+          01 - {String(PROJECTS.length).padStart(2, "0")}
         </span>
       </div>
 
       <div className="grid grid-cols-12 gap-4 sm:gap-5">
-        {projects.map((project, i) => (
+        {PROJECTS.map((project, i) => (
           <article
             key={project.id}
             className={`card-flat card-hover group flex min-w-0 flex-col rounded-2xl p-5 sm:p-8 ${i === 0 ? "col-span-12" : "col-span-12 md:col-span-6"

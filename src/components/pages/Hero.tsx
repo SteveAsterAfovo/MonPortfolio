@@ -1,5 +1,5 @@
 import { Stat } from "@/components/site";
-import { identity, profile, projects, KNOWLEDGE, LINKS, ECOSYSTEM } from "@/data";
+import { identity, profile, PROJECTS, KNOWLEDGE, LINKS, ECOSYSTEM } from "@/data";
 
 export function Hero() {
   return (
@@ -47,7 +47,7 @@ export function Hero() {
           <div className="card-flat animate-rise-slow rounded-2xl p-5 sm:p-7">
             <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground">En bref</p>
             <div className="mt-6 grid grid-cols-3 gap-3 sm:gap-4">
-              <Stat value={String(projects.length + ECOSYSTEM.length)} label="Produits" />
+              <Stat value={String(PROJECTS.length + ECOSYSTEM.length)} label="Produits" />
               <Stat value={String(KNOWLEDGE.certifications.length)} label="Certifs" />
               <Stat value="5+" label="Ans" />
             </div>

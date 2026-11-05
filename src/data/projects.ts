@@ -22,7 +22,7 @@ export type Project = {
   status?: "new" | "updated";
 };
 
-export const projects: Project[] = [
+export const PROJECTS: Project[] = [
   {
     id: "cypass",
     projectKey: "cypass",
