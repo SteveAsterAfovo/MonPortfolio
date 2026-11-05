@@ -5,7 +5,7 @@ import { PROFILE, KNOWLEDGE } from "@/data";
 
 const ITEMS_PER_PAGE = 5;
 
-export function Credentials() {
+export function CredentialsSection() {
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalItems = KNOWLEDGE.certifications.length;
