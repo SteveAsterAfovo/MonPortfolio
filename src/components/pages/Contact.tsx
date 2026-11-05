@@ -1,6 +1,6 @@
 import { identity, LINKS } from "@/data";
 
-export function Contact() {
+export function ContactSection() {
   return (
     <section id="contact" className="py-14 sm:py-24">
       <div className="rounded-3xl bg-foreground p-6 text-background sm:p-12 md:p-16">

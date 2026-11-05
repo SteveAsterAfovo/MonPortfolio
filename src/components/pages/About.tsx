@@ -1,7 +1,7 @@
 import { SectionTitle } from "@/components/site";
 import { identity, PROFILE } from "@/data";
 
-export function About() {
+export function AboutSection() {
   return (
     <section id="a-propos" className="border-b border-border py-14 sm:py-24">
       <SectionTitle tag="À propos" title={identity.quote} />

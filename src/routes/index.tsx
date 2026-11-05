@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteShell } from "@/components/site";
-import { Hero, Projects, About, Stack, Credentials, Contact, Downloads } from "@/components/pages";
+import { Hero, Projects, AboutSection, Stack, Credentials, ContactSection, Downloads } from "@/components/pages";
 import { identity, PROJECTS, STACKS, LINKS } from "@/data";
 
 const AUTHOR_NAME = "Steve Aster D. AFOVO";
@@ -73,11 +73,11 @@ function Index() {
         <Hero />
         <div>
           <Projects />
-          <About />
+          <AboutSection />
           <Stack />
           <Credentials />
           <Downloads />
-          <Contact />
+          <ContactSection />
         </div>
       </main>
 
