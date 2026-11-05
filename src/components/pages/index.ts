@@ -4,4 +4,4 @@ export { CredentialsSection } from "./Credentials";
 export { DownloadsSection } from "./Downloads";
 export { HeroSection } from "./Hero";
 export { ProjectsSection } from "./Projects";
-export { Stack } from "./Stack";
+export { StackSection } from "./Stack";

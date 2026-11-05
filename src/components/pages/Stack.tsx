@@ -1,7 +1,7 @@
 import { SectionTitle } from "@/components/site";
 import { STACKS } from "@/data";
 
-export function Stack() {
+export function StackSection() {
   return (
     <section id="stack" className="border-b border-border py-14 sm:py-24">
       <SectionTitle tag="Stack" title="Les outils du métier" />

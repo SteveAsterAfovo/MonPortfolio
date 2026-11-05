@@ -1,7 +1,7 @@
 export const NAV = [
   { href: "#projets", label: "Projets" },
   { href: "#a-propos", label: "À propos" },
-  { href: "#stack", label: "Stack" },
+  { href: "#stack", label: "Technologies" },
   { href: "#parcours", label: "Parcours" },
   { href: "#documents", label: "Documents" },
 ];
