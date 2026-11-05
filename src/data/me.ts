@@ -32,5 +32,6 @@ export const profile = {
 export const LINKS = {
   STAFPRINT: "https://stafprint.com/",
   WHATSAPP: "https://wa.me/2290166523639",
+  ECOSYSTEM: "https://stafprint.com/tools/ecosystem"
 };
 

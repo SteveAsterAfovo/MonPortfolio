@@ -1,5 +1,6 @@
 import { SectionTitle, ProjetsLogo, screenshotUrl } from "@/components/site";
-import { projects } from "@/data/projects";
+import { projects } from "@/data";
+import { EcosystemCard } from "./Ecosystem";
 
 export function Projects() {
   return (
@@ -117,6 +118,8 @@ export function Projects() {
             </a>
           </article>
         ))}
+
+        <EcosystemCard />
       </div>
     </section>
   );
