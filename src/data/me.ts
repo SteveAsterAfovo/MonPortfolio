@@ -12,7 +12,7 @@ export const identity = {
   poste: "Responsable des opérations",
 };
 
-export const profile = {
+export const PROFILE = {
   paragraphs: [
     `${identity.poste} chez ${identity.company}, je suis développeur fullstack à double culture : Finance & Tech.`,
     "Je conçois des produits web et SaaS qui passent en production. Mon approche : architecture solide, exécution rapide, design soigné.",

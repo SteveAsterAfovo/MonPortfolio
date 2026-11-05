@@ -1,5 +1,5 @@
 import { Stat } from "@/components/site";
-import { identity, profile, PROJECTS, KNOWLEDGE, LINKS, ECOSYSTEM } from "@/data";
+import { identity, PROFILE, PROJECTS, KNOWLEDGE, LINKS, ECOSYSTEM } from "@/data";
 
 export function Hero() {
   return (
@@ -20,8 +20,8 @@ export function Hero() {
           </h1>
 
           <p className="animate-rise mt-6 max-w-[58ch] text-[0.975rem] leading-relaxed text-pretty text-muted-foreground sm:mt-7 sm:text-lg">
-            <p>{profile.paragraphs[0]}</p>
-            <p className="mt-4">{profile.paragraphs[1]}</p>
+            <p>{PROFILE.paragraphs[0]}</p>
+            <p className="mt-4">{PROFILE.paragraphs[1]}</p>
           </p>
 
           <div className="animate-rise mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap sm:items-center">

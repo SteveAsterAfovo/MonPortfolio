@@ -1,5 +1,5 @@
 import { SectionTitle } from "@/components/site";
-import { identity, profile } from "@/data";
+import { identity, PROFILE } from "@/data";
 
 export function About() {
   return (
@@ -8,7 +8,7 @@ export function About() {
 
       <div className="mt-10 grid grid-cols-12 gap-8 sm:mt-12 md:gap-10">
         <div className="col-span-12 min-w-0 md:col-span-7">
-          {profile.paragraphs.map((p) => (
+          {PROFILE.paragraphs.map((p) => (
             <p
               key={p}
               className="mb-5 max-w-[60ch] text-[0.975rem] leading-relaxed text-pretty text-muted-foreground sm:text-lg"
@@ -18,7 +18,7 @@ export function About() {
           ))}
 
           <div className="mt-8 flex flex-wrap gap-2">
-            {profile.softSkills.map((s) => (
+            {PROFILE.softSkills.map((s) => (
               <span key={s} className="rounded-full border border-border bg-card px-4 py-1.5 text-sm">
                 {s}
               </span>
@@ -32,7 +32,7 @@ export function About() {
               Ce qui me distingue
             </p>
             <ul className="mt-6 space-y-4">
-              {profile.differentiators.map((d) => (
+              {PROFILE.differentiators.map((d) => (
                 <li key={d} className="flex gap-3 text-sm text-muted-foreground">
                   <span className="text-primary">◆</span>
                   {d}
