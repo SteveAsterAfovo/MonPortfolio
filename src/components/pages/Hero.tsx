@@ -1,7 +1,7 @@
 import { Stat } from "@/components/site";
 import { identity, PROFILE, PROJECTS, KNOWLEDGE, LINKS, ECOSYSTEM } from "@/data";
 
-export function Hero() {
+export function HeroSection() {
   return (
     <section id="top" className="border-b border-border">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 pt-16 pb-14 sm:px-6 sm:pt-28 sm:pb-24 lg:grid-cols-12">
