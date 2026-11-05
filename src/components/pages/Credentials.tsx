@@ -1,19 +1,19 @@
 import { useState } from "react";
 import { ExternalLink } from "lucide-react";
 import { SectionTitle } from "@/components/site";
-import { profile, knowledge } from "@/data";
+import { profile, KNOWLEDGE } from "@/data";
 
 const ITEMS_PER_PAGE = 5;
 
 export function Credentials() {
   const [currentPage, setCurrentPage] = useState(1);
 
-  const totalItems = knowledge.certifications.length;
+  const totalItems = KNOWLEDGE.certifications.length;
   const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, totalItems);
 
-  const paginatedCertifications = knowledge.certifications.slice(
+  const paginatedCertifications = KNOWLEDGE.certifications.slice(
     startIndex,
     startIndex + ITEMS_PER_PAGE
   );
@@ -118,7 +118,7 @@ export function Credentials() {
           <div className="card-flat rounded-2xl p-5 sm:p-8">
             <h3 className="font-mono text-[10px] uppercase tracking-[0.24em] text-primary">Formation</h3>
             <ul className="mt-6 space-y-4">
-              {knowledge.education.map((e) => (
+              {KNOWLEDGE.education.map((e) => (
                 <li key={e.name}>
                   <div className="text-sm font-medium">{e.name}</div>
                   <div className="text-xs text-muted-foreground">

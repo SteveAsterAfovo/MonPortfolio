@@ -5,7 +5,7 @@ export type Certification = {
   url?: string;
 };
 
-export const knowledge = {
+export const KNOWLEDGE = {
   certifications: [
     {
       name: "Deloitte Australia - Technology  Job Simulation",
