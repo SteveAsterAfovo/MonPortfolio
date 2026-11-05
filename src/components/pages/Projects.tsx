@@ -2,7 +2,7 @@ import { SectionTitle, ProjetsLogo, screenshotUrl } from "@/components/site";
 import { PROJECTS } from "@/data";
 import { EcosystemCard } from "./Ecosystem";
 
-export function Projects() {
+export function ProjectsSection() {
   return (
     <section id="projets" className="border-b border-border py-14 sm:py-24">
       <div className="mb-10 flex items-end justify-between gap-6 sm:mb-12">
