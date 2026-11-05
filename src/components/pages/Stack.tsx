@@ -1,15 +1,15 @@
 import { SectionTitle } from "@/components/site";
-import { stacks } from "@/data";
+import { STACKS } from "@/data";
 
 export function Stack() {
   return (
     <section id="stack" className="border-b border-border py-14 sm:py-24">
       <SectionTitle tag="Stack" title="Les outils du métier" />
       <p className="mt-6 mb-10 max-w-[64ch] text-[0.975rem] leading-relaxed text-pretty text-muted-foreground sm:mb-12 sm:text-lg">
-        {stacks.intro}
+        {STACKS.intro}
       </p>
       <div className="grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
-        {stacks.detail.map((cat) => (
+        {STACKS.detail.map((cat) => (
           <div key={cat.label} className="card-flat card-hover min-w-0 rounded-2xl p-5 sm:p-7">
             <h3 className="font-display text-lg font-semibold tracking-[-0.02em]">{cat.label}</h3>
             <div className="mt-5 flex flex-wrap gap-2">
@@ -25,7 +25,7 @@ export function Stack() {
           </div>
         ))}
       </div>
-      <p className="mt-8 font-mono text-sm text-primary">{stacks.footer}</p>
+      <p className="mt-8 font-mono text-sm text-primary">{STACKS.footer}</p>
     </section>
   );
 }

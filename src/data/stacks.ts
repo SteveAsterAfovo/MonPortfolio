@@ -4,7 +4,7 @@ export type StackCategory = {
   items: string[];
 };
 
-export const stacks = {
+export const STACKS = {
   intro: "Une stack moderne, choisie pour la productivité et la fiabilité - du front pixel-perfect au back robuste, avec l'IA comme accélérateur.",
 
   detail: [
