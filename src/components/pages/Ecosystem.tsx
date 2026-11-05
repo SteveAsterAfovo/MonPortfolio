@@ -57,7 +57,7 @@ export function EcosystemCard() {
                   <button
                     key={k}
                     onClick={() => setFilter(k)}
-                    className={`rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors ${filter === k ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card hover:border-primary"
+                    className={`rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors ${filter === k ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card hover:border-primary cursor-pointer"
                       }`}
                   >
                     {label}
@@ -99,7 +99,7 @@ export function EcosystemCard() {
           href={LINKS.ECOSYSTEM}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center rounded-full border border-border bg-card px-6 py-3 text-sm font-medium transition-colors hover:bg-secondary"
+          className="inline-flex items-center justify-center rounded-full border border-border bg-card px-6 py-3 text-sm font-medium transition-colors hover:bg-secondary cursor-pointer"
         >
           Voir sur stafprint.com ↗
         </a>
